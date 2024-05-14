@@ -7,9 +7,9 @@ description: DSR Strats.
 ### Toolboxes / Raidplan ###
 - [**P1 Vault Knights (Door Boss)**](https://ff14.toolboxgaming.space/?id=802461081524561&preview=1)
 - **P2 Thordan**
-    - [**Thordan Setup + Strength**](https://ff14.toolboxgaming.space/?id=740061050351561&preview=1)
-    - [**Thordan Sanctity Dashes**](https://ff14.toolboxgaming.space/?id=840061660351561&preview=1)
-    - [**Thordan Sanctity Meteors**](https://ff14.toolboxgaming.space/?id=050062490351561&preview=1)
+    - [**Setup + Strength**](https://ff14.toolboxgaming.space/?id=740061050351561&preview=1)
+    - [**Sanctity Dashes**](https://ff14.toolboxgaming.space/?id=840061660351561&preview=1)
+    - [**Sanctity Meteors**](https://ff14.toolboxgaming.space/?id=050062490351561&preview=1)
     
 - [**P3 Nidstinien**](https://ff14.toolboxgaming.space/?id=442165647202561&preview=1)
 - [**P4 Eyes**](https://raidplan.io/plan/1wcD63zv2L8OB9KC)
@@ -24,12 +24,20 @@ description: DSR Strats.
 
 "Video Link Here"
 
-### Tips     ###
+### Tips ###
+- You can use your 30% Mit (Nebula/Vengeance/Shadow Wall/Sentinel) for the Buster after DOTH and then just live WB1 with both short mits, this makes it so you dont have to rely on needing extra mit to survive the Heel/Cleaves (otherwise you need rep+feint and some healer help). Make sure to give the other tank your short mit if you are not taking a buster!
 
 - Melees with defensives should prio vow, just because you are flexing doesnt mean you also cant take the vow, this makes healers life easier and makes it so you dont wipe 15m into the fight because of a DRG exploding!
-    - MNK/NIN > SAM/RPR > DRG prio is ideal
 
-- Kerachole/Soil NEEDS to be used after second trinity (after exas) to be up for Gigaflare!
+    - MNK/NIN > SAM/RPR > DRG prio is ideal
+<br>
+<br>
+
+- Make sure to wait until the **SECOND** bleed falls off in Dragon-king transition before you use shields, this includes things like Veil/Shake.
+
+- Mitigation for DKT doesnt snapshot on the cast for all the hits, if you can, make sure to use it around 70-80% of the castbar so it catches all the hits! This only applies to 10s cooldowns.
+
+- Kerachole/Soil **NEEDS** to be used after second trinity to be up for Gigaflare!
 
 
 ### Markers ###
