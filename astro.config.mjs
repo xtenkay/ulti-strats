@@ -4,6 +4,7 @@ import starlight from '@astrojs/starlight';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://xtenkay.github.io',
+  	base: '/NA-ultimate-strats',
 	integrations: [
 		starlight({
 			title: 'NA Ultimate Strats',
