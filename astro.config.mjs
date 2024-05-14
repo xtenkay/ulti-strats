@@ -7,9 +7,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'NA Ultimate Strats',
-			social: {
-				github: 'https://github.com/withastro/starlight',
-			},
+			
 			
 			sidebar: [
 				{
