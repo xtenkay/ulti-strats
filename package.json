@@ -2,7 +2,7 @@
   "name": "wandering-wasp",
   "type": "module",
   "version": "0.0.1",
-  "homepage": "www.ultistrats.com",
+  "homepage": "xtenkay.github.io",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
