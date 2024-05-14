@@ -1,7 +1,7 @@
 :root{
-    --sl-color-gray-6: hsl(216, 44%, 12%);
+    --sl-color-gray-6: hsl(347, 51%, 15%);
     --sl-color-accent-high: hsl(0, 0%, 88%);
-    --sl-nav-pad-x: 25%;
+    --sl-nav-pad-x: 12.5%;
     --sl-content-pad-x: 20%;
     --sl-sidebar-width: 25%;
 }
