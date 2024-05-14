@@ -2,10 +2,8 @@
 title: Dragonsong's Reprise
 description: DSR Strats.
 ---
-### Links ###
-- [**Pastebin**](https://pastebin.com/uxVnJm7R)
-- [**Tank Mit**](https://docs.google.com/spreadsheets/d/1zB5NpvIR0J5uAybtYkqAn_gglnmYcSCo0b0mgSZagUg/edit#gid=917445177)
-
+### Resources ###
+- [**DSR Mitty**](https://docs.google.com/spreadsheets/d/1sUEuFDGa_Qg4SYHo4y7b4oEvUGvmhkUMn2rPdXdWEo0/edit#gid=263338920)
 ### Toolboxes / Raidplan ###
 - [**P1 Vault Knights (Door Boss)**](https://ff14.toolboxgaming.space/?id=802461081524561&preview=1)
 - **P2 Thordan**
@@ -22,5 +20,57 @@ description: DSR Strats.
 - [**Double Dragons**](https://ff14.toolboxgaming.space/?id=426762112878561&preview=1)
 - [**Dragon-king Thordan**](https://ff14.toolboxgaming.space/?id=448767858029561&preview=1)
 
+### Videos ###
+
+"Video Link Here"
+
+### Tips     ###
+
+- Melees with defensives should prio vow, just because you are flexing doesnt mean you also cant take the vow, this makes healers life easier and makes it so you dont wipe 15m into the fight because of a DRG exploding!
+    - MNK/NIN > SAM/RPR > DRG prio is ideal
+
+- Kerachole/Soil NEEDS to be used after second trinity (after exas) to be up for Gigaflare!
+
+
 ### Markers ###
 
+**Fight Markers**
+```
+{"Name":"DSR","MapID":788,"A":{"X":99.855,"Y":0.0,"Z":90.945,"ID":0,"Active":true},"B":{"X":114.277,"Y":0.0,"Z":87.155,"ID":1,"Active":true},"C":{"X":109.996,"Y":0.0,"Z":99.53,"ID":2,"Active":true},"D":{"X":114.097,"Y":0.0,"Z":113.67,"ID":3,"Active":true},"One":{"X":99.736,"Y":0.0,"Z":109.786,"ID":4,"Active":true},"Two":{"X":86.199,"Y":0.0,"Z":113.988,"ID":5,"Active":true},"Three":{"X":90.829,"Y":0.0,"Z":99.399,"ID":6,"Active":true},"Four":{"X":85.728,"Y":0.0,"Z":86.084,"ID":7,"Active":true}}
+```
+
+
+
+**PF Setup Markers:**
+
+- P1 (Door Boss)
+
+```
+{"Name":"Door Boss","MapID":788,"A":{"X":93.331,"Y":0.0,"Z":103.162,"ID":0,"Active":true},"B":{"X":96.814,"Y":0.0,"Z":106.709,"ID":1,"Active":true},"C":{"X":103.22,"Y":0.0,"Z":106.669,"ID":2,"Active":true},"D":{"X":106.601,"Y":0.0,"Z":103.18,"ID":3,"Active":true},"One":{"X":93.138,"Y":0.0,"Z":96.407,"ID":4,"Active":true},"Two":{"X":96.841,"Y":0.0,"Z":93.281,"ID":5,"Active":true},"Three":{"X":103.441,"Y":0.0,"Z":93.119,"ID":6,"Active":true},"Four":{"X":106.664,"Y":0.0,"Z":96.403,"ID":7,"Active":true}}
+```
+
+- Strength Spots
+```
+{"Name":"Strength","MapID":788,"A":{"X":106.846,"Y":0.0,"Z":116.184,"ID":0,"Active":true},"B":{"X":107.397,"Y":0.0,"Z":118.676,"ID":1,"Active":true},"C":{"X":104.447,"Y":0.0,"Z":119.195,"ID":2,"Active":true},"D":{"X":109.116,"Y":0.0,"Z":117.392,"ID":3,"Active":true},"One":{"X":94.47,"Y":0.0,"Z":115.901,"ID":4,"Active":true},"Two":{"X":92.074,"Y":0.0,"Z":117.757,"ID":5,"Active":true},"Three":{"X":94.763,"Y":0.0,"Z":118.15,"ID":6,"Active":true},"Four":{"X":97.031,"Y":0.0,"Z":118.161,"ID":7,"Active":true}}
+```
+
+- Sanctity Spots
+```
+{"Name":"Sanctity","MapID":788,"A":{"X":0.0,"Y":0.0,"Z":0.0,"ID":0,"Active":false},"B":{"X":0.0,"Y":0.0,"Z":0.0,"ID":1,"Active":false},"C":{"X":0.0,"Y":0.0,"Z":0.0,"ID":2,"Active":false},"D":{"X":0.0,"Y":0.0,"Z":0.0,"ID":3,"Active":false},"One":{"X":99.362,"Y":0.0,"Z":114.586,"ID":4,"Active":true},"Two":{"X":101.827,"Y":0.0,"Z":117.677,"ID":5,"Active":true},"Three":{"X":97.304,"Y":0.0,"Z":117.619,"ID":6,"Active":true},"Four":{"X":98.707,"Y":0.0,"Z":119.762,"ID":7,"Active":true}}
+```
+
+- Death of the Heavens Conga
+```
+{"Name":"DOTH","MapID":788,"A":{"X":93.526,"Y":0.0,"Z":115.076,"ID":0,"Active":true},"B":{"X":96.365,"Y":0.0,"Z":114.982,"ID":1,"Active":true},"C":{"X":99.539,"Y":0.0,"Z":115.437,"ID":2,"Active":true},"D":{"X":102.014,"Y":0.0,"Z":115.455,"ID":3,"Active":true},"One":{"X":104.624,"Y":0.0,"Z":115.241,"ID":4,"Active":true},"Two":{"X":107.104,"Y":0.0,"Z":115.136,"ID":5,"Active":true},"Three":{"X":109.267,"Y":0.0,"Z":114.065,"ID":6,"Active":true},"Four":{"X":111.342,"Y":0.0,"Z":113.233,"ID":7,"Active":true}}
+```
+
+- Wyrmsbreath 1
+```
+{"Name":"WB1","MapID":788,"A":{"X":0.0,"Y":0.0,"Z":0.0,"ID":0,"Active":false},"B":{"X":0.0,"Y":0.0,"Z":0.0,"ID":1,"Active":false},"C":{"X":0.0,"Y":0.0,"Z":0.0,"ID":2,"Active":false},"D":{"X":0.0,"Y":0.0,"Z":0.0,"ID":3,"Active":false},"One":{"X":101.281,"Y":0.0,"Z":114.619,"ID":4,"Active":true},"Two":{"X":97.562,"Y":0.0,"Z":118.983,"ID":5,"Active":true},"Three":{"X":105.705,"Y":0.0,"Z":118.434,"ID":6,"Active":true},"Four":{"X":0.0,"Y":0.0,"Z":0.0,"ID":7,"Active":false}}
+```
+
+- Static Wyrmsbreath
+
+```
+{"Name":"Static WB2","MapID":788,"A":{"X":98.528,"Y":0.0,"Z":111.513,"ID":0,"Active":true},"B":{"X":99.416,"Y":0.0,"Z":119.375,"ID":1,"Active":true},"C":{"X":0.0,"Y":0.0,"Z":0.0,"ID":2,"Active":false},"D":{"X":0.0,"Y":0.0,"Z":0.0,"ID":3,"Active":false},"One":{"X":95.583,"Y":0.0,"Z":119.301,"ID":4,"Active":true},"Two":{"X":98.077,"Y":0.0,"Z":116.847,"ID":5,"Active":true},"Three":{"X":100.039,"Y":0.0,"Z":114.569,"ID":6,"Active":true},"Four":{"X":102.236,"Y":0.0,"Z":112.416,"ID":7,"Active":true}}
+```
