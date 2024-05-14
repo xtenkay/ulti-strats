@@ -2,7 +2,7 @@
   "name": "wandering-wasp",
   "type": "module",
   "version": "0.0.1",
-  "homepage": ".",
+  "homepage": "www.ultistrats.com",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
