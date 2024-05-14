@@ -1,6 +1,6 @@
 ---
 title: The Epic of Alexander
-description: TEA Strats.
+description: TEA Strats .
 ---
 <img src="https://i.imgur.com/EkVxrOM.png"/>
 
