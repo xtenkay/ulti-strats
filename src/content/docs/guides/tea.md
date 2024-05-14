@@ -3,7 +3,7 @@ title: The Epic of Alexander
 description: TEA Strats.
 ---
 ### Links ###
-- [**Pastebin**](https://pastebin.com/uxVnJm7R) Credits to: Elina Chan / Elina Cyliathe @ Sargatanas
+- [**Pastebin**](https://pastebin.com/uxVnJm7R) 
 - [**Tank Mit**](https://docs.google.com/spreadsheets/d/1zB5NpvIR0J5uAybtYkqAn_gglnmYcSCo0b0mgSZagUg/edit#gid=917445177)
 
 ### Toolboxes ###

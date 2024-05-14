@@ -1,5 +1,5 @@
 ---
-title: Ultimate Coil of Bahamut (UCOB)
+title: Ultimate Coil of Bahamut
 description: UCOB Strats.
 ---
 

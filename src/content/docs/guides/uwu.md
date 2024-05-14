@@ -1,5 +1,5 @@
 ---
-title: Ultima Weapon's Refrain 
+title: The Weapon's Refrain
 description: UWU Strats.
 ---
 

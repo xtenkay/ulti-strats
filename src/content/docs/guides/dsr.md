@@ -26,6 +26,9 @@ description: DSR Strats.
 
 ### Tips ###
 - You can use your 30% Mit (Nebula/Vengeance/Shadow Wall/Sentinel) for the Buster after DOTH and then just live WB1 with both short mits, this makes it so you dont have to rely on needing extra mit to survive the Heel/Cleaves (otherwise you need rep+feint and some healer help). Make sure to give the other tank your short mit if you are not taking a buster!
+    - If you dont trust your co-tank you can use your third CD (the one you use in Hallowed 2) here and you'll live and have it back.
+<br>
+<br>
 
 - Melees with defensives should prio vow, just because you are flexing doesnt mean you also cant take the vow, this makes healers life easier and makes it so you dont wipe 15m into the fight because of a DRG exploding!
 

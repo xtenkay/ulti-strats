@@ -1,6 +1,6 @@
 :root{
-    --sl-color-gray-6: hsl(224, 0%, 20%);
-    --sl-color-accent-high: hsl(224, 0%, 85%);
+    --sl-color-gray-6: hsl(0, 0%, 19%);
+    --sl-color-accent-high: hsl(0, 0%, 88%);
     --sl-nav-pad-x: 25%;
     --sl-content-pad-x: 20%;
     --sl-sidebar-width: 25%;
@@ -8,4 +8,19 @@
 
 .sidebar-content{
     padding-left:50%;
+}
+
+h1{
+    text-align: center;
+}
+
+.ulti-image{
+    height: 100%;
+    width:100%;
+    border: 1px solid #cccccc;
+}
+
+.ulti-name{
+    text-align: center;
+    font-size:2rem;
 }

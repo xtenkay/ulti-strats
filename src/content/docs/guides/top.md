@@ -3,7 +3,7 @@ title: The Omega Protocol
 description: TOP Strats.
 ---
 ### Links ###
-- [**Pastebin**](https://pastebin.com/PyBmi5N4 ) Credits to: Sausage Roll
+- [**Pastebin**](https://pastebin.com/PyBmi5N4 )
 - [**Tank Mit**]()
 
 ### Toolboxes / Raidplan ###
