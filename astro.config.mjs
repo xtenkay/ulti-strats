@@ -34,10 +34,6 @@ export default defineConfig({
 				},
 			],
 			pagination:false,
-			customCss: [
-				// Relative path to your custom CSS file
-				'./src/styles/custom.css',
-			  ],
 		}),
 	],
 });
