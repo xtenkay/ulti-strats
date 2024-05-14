@@ -2,7 +2,7 @@
 title: The Epic of Alexander
 description: TEA Strats.
 ---
-<img src="/src/assets/images/tea.png"/>
+<img src="https://i.imgur.com/EkVxrOM.png"/>
 
 ### Links ###
 - [**Pastebin**](https://pastebin.com/uxVnJm7R) 
