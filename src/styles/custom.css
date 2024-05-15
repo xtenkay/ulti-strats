@@ -9,11 +9,6 @@
     --__sidebar-pad: calc(35 * var(--sl-nav-pad-x));
 }
 
-
-.content-panel{
- 
-}
-
 h1{ 
     text-align: center;
    
@@ -39,10 +34,8 @@ div.main-pane{
 }
 
 .ulti-tooltip{
-    position: absolute;
-    top: 5rem;
-    right: 5rem;
-    max-width: 350px;
+    float:right;
+    max-width: 350px !important;
     max-height: 400px;
 }
 
