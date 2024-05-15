@@ -1,7 +1,13 @@
 :root{
-    --sl-color-gray-6: hsl(347, 51%, 15%);
-    --sl-color-accent-high: hsl(0, 0%, 88%);
+    --sl-color-gray-6: #27262b;
+    --sl-content-width: 85%;
+    --sl-color-white: hsl(0, 0%, 97%);
 }
+
+:root[data-has-sidebar]{
+    --__sidebar-pad: calc(35 * var(--sl-nav-pad-x));
+}
+
 
 h1{
     text-align: center;
@@ -16,4 +22,30 @@ h1{
 .ulti-name{
     text-align: center;
     font-size:2rem;
+}
+
+div.main-pane{
+    --sl-content-margin-inline: 25% !important;
+}
+
+.content-panel{
+    position: relative;
+}
+
+.ulti-tooltip{
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+    max-width: 350px;
+    max-height: 400px;
+}
+
+.starlight-aside__icon{
+    display:none !important;
+}
+
+.light-pillar-tip aside{
+    border-color:rgb(58, 151, 120);
+    background: rgb(15, 78, 57);
+    --sl-color-asides-text-accent: white;
 }
