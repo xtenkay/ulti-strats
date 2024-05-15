@@ -5,6 +5,10 @@
     
 }
 
+.index-content{
+  text-align: center;
+}
+
 h1,h2,h3,h4, .site-title{
   font-weight:400;
 }
@@ -93,12 +97,12 @@ div.main-pane{
 }
 
 .multi-button {
-    display: flex;
-    justify-content: space-between;
+    display: inline-flex;
+    justify-content: center;
     align-items: center;
-    width:80%;
     margin:auto;
     text-align: center;
+    position: relative;
     
     
     button {
