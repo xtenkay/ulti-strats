@@ -10,8 +10,13 @@
 }
 
 
-h1{
+.content-panel{
+ 
+}
+
+h1{ 
     text-align: center;
+   
 }
 
 .ulti-image{
@@ -49,6 +54,41 @@ div.main-pane{
     border-color:rgb(58, 151, 120);
     background: rgb(15, 78, 57);
     --sl-color-asides-text-accent: white;
+}
+
+:where(.ucob-sidebar)[aria-current=page],
+:where(.ucob-sidebar)[aria-current=page]:hover,
+:where(.ucob-sidebar)[aria-current=page]:focus{
+  background-color: #ac7522;
+  color:white;
+}
+
+:where(.uwu-sidebar)[aria-current=page],
+:where(.uwu-sidebar)[aria-current=page]:hover,
+:where(.uwu-sidebar)[aria-current=page]:focus{
+  background-color: #1d5296;
+  color:white;
+}
+
+:where(.tea-sidebar)[aria-current=page],
+:where(.tea-sidebar)[aria-current=page]:hover,
+:where(.tea-sidebar)[aria-current=page]:focus{
+  background-color: #e2d135;
+  
+}
+
+:where(.dsr-sidebar)[aria-current=page],
+:where(.dsr-sidebar)[aria-current=page]:hover,
+:where(.dsr-sidebar)[aria-current=page]:focus{
+  background-color: #ce3535;
+  color:white;
+}
+
+:where(.top-sidebar)[aria-current=page],
+:where(.top-sidebar)[aria-current=page]:hover,
+:where(.top-sidebar)[aria-current=page]:focus{
+  background-color: #741e80;
+  color:white;
 }
 
 .multi-button {

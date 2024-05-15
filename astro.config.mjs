@@ -15,19 +15,24 @@ export default defineConfig({
       // Each item here is one entry in the navigation menu.
       {
         label: 'UCOB',
-        link: '/guides/ucob/'
+        link: '/guides/ucob/',
+        attrs: {class: `ucob-sidebar`}
       }, {
         label: 'UWU',
-        link: '/guides/uwu/'
+        link: '/guides/uwu/',
+        attrs: {class: `uwu-sidebar`}
       }, {
         label: 'TEA',
-        link: '/guides/tea/'
+        link: '/guides/tea/',
+        attrs: {class: `tea-sidebar`}
       }, {
         label: 'DSR',
-        link: '/guides/dsr/'
+        link: '/guides/dsr/',
+        attrs: {class: `dsr-sidebar`}
       }, {
         label: 'TOP',
-        link: '/guides/top/'
+        link: '/guides/top/',
+        attrs: {class: `top-sidebar`}
       }]
     }, {
       label: 'Others',
