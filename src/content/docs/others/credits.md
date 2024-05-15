@@ -2,4 +2,10 @@
 title: Credits
 description: Credits.
 ---
-### Lmao ###
+### Credits ###
+
+- Toolbox creators
+- Raidplan creators
+- Pastebin creators
+- Coblovers
+- Battle Litany
