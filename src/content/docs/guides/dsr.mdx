@@ -5,41 +5,45 @@ description: DSR Strats
 import { Aside } from '@astrojs/starlight/components';
 import { Icon } from '@astrojs/starlight/components';
 
-<base target="_blank"></base>
 <img class="ulti-tooltip" src="/dkt.webp"/>
 
 ### Resources ###
-- [**DSR Mitty**](https://docs.google.com/spreadsheets/d/1sUEuFDGa_Qg4SYHo4y7b4oEvUGvmhkUMn2rPdXdWEo0/edit#gid=263338920)
+- <a href="https://docs.google.com/spreadsheets/d/1sUEuFDGa_Qg4SYHo4y7b4oEvUGvmhkUMn2rPdXdWEo0/edit#gid=263338920" target="_blank">**DSR Mitty**</a>
 
 ### Toolboxes / Raidplan ###
 <h4>**P1 Vault Knights (Door Boss)**</h4>
-    - [Toolbox](https://ff14.toolboxgaming.space/?id=802461081524561&preview=1)
+    - <a href="https://ff14.toolboxgaming.space/?id=802461081524561&preview=1" target="_blank">Toolbox</a>
     - Playstation Macro
-    ```
-    D △   T X   T □
-    D O         D O
+
+<div class="dkt-macro">
+    ```bash frame="none"
+    D △   T X   T □ 
+    D O         D O 
     D □   H X   H △
     ```
+</div>
+
 <h4>**P2 Thordan**</h4>
-    - [Setup + Strength](https://ff14.toolboxgaming.space/?id=740061050351561&preview=1)
-    - [Sanctity Dashes](https://ff14.toolboxgaming.space/?id=840061660351561&preview=1)
-    - [Sanctity Meteors](https://ff14.toolboxgaming.space/?id=050062490351561&preview=1)
+    - <a href="https://ff14.toolboxgaming.space/?id=740061050351561&preview=1" target="_blank">Setup + Strength</a>
+    - <a href="https://ff14.toolboxgaming.space/?id=840061660351561&preview=1" target="_blank">Sanctity Dashes</a>
+    - <a href="https://ff14.toolboxgaming.space/?id=050062490351561&preview=1" target="_blank">Sanctity Meteors</a>
 
 <h4>**P3 Niddhog**</h4>
-    - [Toolbox](https://ff14.toolboxgaming.space/?id=442165647202561&preview=1)
+    - <a href="https://ff14.toolboxgaming.space/?id=442165647202561&preview=1" target="_blank">Toolbox</a>
 
 <h4>**P4 Eyes**</h4>
-    - [Raidplan](https://raidplan.io/plan/1wcD63zv2L8OB9KC)
+    - <a href="https://raidplan.io/plan/1wcD63zv2L8OB9KC" target="_blank">Raidplan</a>
 
 <h4>**Intermission**</h4>
-    - [Toolbox](https://ff14.toolboxgaming.space/?id=999851866521561&preview=1)
+    - <a href="https://ff14.toolboxgaming.space/?id=999851866521561&preview=1" target="_blank">Toolbox</a>
 
 <h4>**P5 Dark Thordan**</h4>
-    - [Wrath](https://ff14.toolboxgaming.space/?id=143466228734561&preview=1)
-    - [Doth](https://ff14.toolboxgaming.space/?id=655564591965561&preview=1)
+    - <a href="https://ff14.toolboxgaming.space/?id=143466228734561&preview=1" target="_blank">Wrath</a>
+    - <a href="https://ff14.toolboxgaming.space/?id=655564591965561&preview=1" target="_blank">Doth</a>
 
 <h4>**P6 Double Dragons**</h4>
-    - [Toolbox](https://ff14.toolboxgaming.space/?id=426762112878561&preview=1)
+    - <a href="https://ff14.toolboxgaming.space/?id=426762112878561&preview=1" target="_blank">Toolbox</a>
+    
     - **Wyrmsbreath 2 Positions**
     <img
         src="/fixed_wyrmsbreath2.png"
@@ -52,8 +56,28 @@ import { Icon } from '@astrojs/starlight/components';
         style="cursor:pointer;"
         />
 
+:::note[Wyrmsbreath 1 Tanks]
+- You can use your 30% Mit (Nebula/Vengeance/Shadow Wall/Sentinel) for the Buster after DOTH and then just live WB1 with both short mits, this makes it so you dont have to rely on needing extra mit to survive the Heel/Cleaves (otherwise you need rep+feint and some healer help). Make sure to give the other tank your short mit if you are not taking a buster!
+    - If you dont trust your co-tank you can use your third CD (the one you use in Hallowed 2) here and you'll live and have it back.
+:::
+
+:::danger[Niddhog's Vow]
+- Melees with defensives should prio vow, just because you are flexing doesnt mean you also cant take the vow, this makes healers life easier and makes it so you dont wipe 15m into the fight because of a DRG exploding!
+    - MNK/NIN > SAM/RPR > DRG prio is ideal
+:::
+
+
 <h4>**P7 Dragon-king Thordan**</h4>
-    - [Toolbox](https://ff14.toolboxgaming.space/?id=448767858029561&preview=1)
+
+    - <a href="https://ff14.toolboxgaming.space/?id=448767858029561&preview=1" target="_blank">Toolbox</a>
+
+:::tip[DKT Mitigation]
+- Make sure to wait until the **SECOND** bleed falls off in Dragon-king transition before you use shields, this includes things like Veil/Shake.
+
+- Mitigation for DKT doesnt snapshot on the cast for all the hits, if you can, make sure to use it around 70-80% of the castbar so it catches all the hits! This only applies to 10s cooldowns.
+
+- Kerachole/Soil **NEEDS** to be used after second trinity to be up for Gigaflare!
+:::
 
 ### Videos ###
 
@@ -103,20 +127,3 @@ import { Icon } from '@astrojs/starlight/components';
 ```
 
 ### Tips ###
-:::note[Wyrmsbreath Tanks]
-- You can use your 30% Mit (Nebula/Vengeance/Shadow Wall/Sentinel) for the Buster after DOTH and then just live WB1 with both short mits, this makes it so you dont have to rely on needing extra mit to survive the Heel/Cleaves (otherwise you need rep+feint and some healer help). Make sure to give the other tank your short mit if you are not taking a buster!
-    - If you dont trust your co-tank you can use your third CD (the one you use in Hallowed 2) here and you'll live and have it back.
-:::
-
-:::danger[Niddhog's Vow]
-- Melees with defensives should prio vow, just because you are flexing doesnt mean you also cant take the vow, this makes healers life easier and makes it so you dont wipe 15m into the fight because of a DRG exploding!
-    - MNK/NIN > SAM/RPR > DRG prio is ideal
-:::
-
-:::tip[Other Info]
-- Make sure to wait until the **SECOND** bleed falls off in Dragon-king transition before you use shields, this includes things like Veil/Shake.
-
-- Mitigation for DKT doesnt snapshot on the cast for all the hits, if you can, make sure to use it around 70-80% of the castbar so it catches all the hits! This only applies to 10s cooldowns.
-
-- Kerachole/Soil **NEEDS** to be used after second trinity to be up for Gigaflare!
-:::

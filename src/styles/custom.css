@@ -5,8 +5,16 @@
     
 }
 
+h1,h2,h3,h4, .site-title{
+  font-weight:400;
+}
+
 :root[data-has-sidebar]{
-    --__sidebar-pad: calc(35 * var(--sl-nav-pad-x));
+    --__sidebar-pad: calc(20 * var(--sl-nav-pad-x));
+}
+
+.dkt-macro{
+  max-width: 10%;
 }
 
 h1{ 
@@ -26,7 +34,7 @@ h1{
 }
 
 div.main-pane{
-    --sl-content-margin-inline: 25% !important;
+    --sl-content-margin-inline: 5% !important;
 }
 
 .content-panel{
@@ -88,15 +96,20 @@ div.main-pane{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width:80%;
+    margin:auto;
+    text-align: center;
     
     
     button {
       flex: 1;
+      margin-right:5px;
       -moz-appearance: none;
       -webkit-appearance: none;
       position: relative;
       padding: 1rem 2rem;
       border: 2px solid #f2f2f2;
+      border-radius: 6px 6px 6px 6px;
       text-transform: uppercase;
       font-weight: 500;
       font-size: 1em;
@@ -139,9 +152,7 @@ div.main-pane{
         
       }
       
-      &:nth-of-type(1) {
-        border-radius: 6px 0 0 6px;
-      }
+      
       &:nth-of-type(1)::after {
         background-color: #ac7522;
         border-radius: 6px 0 0 6px;
@@ -167,9 +178,7 @@ div.main-pane{
         border-radius: 6px 0 0 6px;
       }
       
-      &:nth-of-type(5) {
-        border-radius: 0 6px 6px 0;
-      }
+      
     }
   }
   
