@@ -4,8 +4,13 @@ description: Credits.
 ---
 ### Credits ###
 
+Site made by Tenkay
+
+Thanks to:
+
 - Toolbox creators
 - Raidplan creators
 - Pastebin creators
 - Coblovers
-- Battle Litany
+
+Any feedback contact Tenkay on Discord
