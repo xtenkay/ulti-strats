@@ -13,4 +13,4 @@ Thanks to:
 - Pastebin creators
 - Coblovers
 
-Any feedback contact Tenkay on Discord
+Any feedback contact Tenkay on Discord or send a pull request on the [Github](https://github.com/xtenkay/ulti-strats)
