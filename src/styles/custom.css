@@ -17,6 +17,11 @@ h1,h2,h3,h4, .site-title{
     --__sidebar-pad: calc(20 * var(--sl-nav-pad-x));
 }
 
+.wormhole-macro .expressive-code{
+  max-width: 400px;
+  line-height: 0.5;
+}
+
 .dkt-macro{
   min-width: 200px;
   max-width: 10%;
