@@ -1,8 +1,22 @@
 :root{
-    --sl-color-gray-6: #27262b;
+    --sl-color-gray-6: #2c2b31;
+    --sl-color-bg: #27262b;
     --sl-content-width: 85%;
     --sl-color-white: hsl(0, 0%, 97%);
     
+}
+
+hr {
+  border: none;
+  height: 2px;
+  /* Set the hr color */
+  color: #74737a;  /* old IE */
+  background-color: #74737a;  /* Modern Browsers */
+}
+
+.details,
+.summary {
+  margin-left: 5%;
 }
 
 .index-content{
