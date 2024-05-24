@@ -7,7 +7,7 @@ description: Credits.
 - Toolbox creators
 - Raidplan creators
 - Pastebin creators
-- Coblovers
+- [Coblovers] (https://discord.gg/77KUBgvKzz)
 
 <br></br>
 <hr></hr>
