@@ -7,17 +7,15 @@ description: Credits.
 - Toolbox creators
 - Raidplan creators
 - Pastebin creators
-- [Coblovers] (https://discord.gg/77KUBgvKzz)
-
-<br></br>
+- [Cob Enjoyers Discord](https://discord.gg/77KUBgvKzz)
 <hr></hr>
 
 ### Special Thanks ###
-
 [Materia Raiding](https://materiaraiding.com/)
 
 Tuufless from [FFXIV Elemental Raid Macros](https://materiaraiding.com/)
 
 <hr></hr>
+<br></br>
 
-Any feedback contact Tenkay on Discord or send a pull request on the [Github](https://github.com/xtenkay/ulti-strats)
+Any feedback contact Tenkay on Discord or send a pull request or create an issue on the [Github](https://github.com/xtenkay/ulti-strats)
