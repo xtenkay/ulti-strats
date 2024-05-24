@@ -41,6 +41,10 @@ export default defineConfig({
       {
         label: 'Credits',
         link: '/others/credits/'
+      },
+      {
+        label: 'Changelog',
+        link: '/others/changelog/'
       }]
     }],
     pagination: false,
