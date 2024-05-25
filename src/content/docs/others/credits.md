@@ -13,7 +13,7 @@ description: Credits.
 ### Special Thanks ###
 [Materia Raiding](https://materiaraiding.com/)
 
-Tuufless from [FFXIV Elemental Raid Macros](https://materiaraiding.com/)
+Tuufless from [FFXIV Elemental Raid Macros](https://tuufless.github.io/FFXIV-Elemental-Raid-Macros/)
 
 <hr></hr>
 <br></br>
