@@ -1,8 +1,9 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import mdx from "@astrojs/mdx";
-
 import expressiveCode from "astro-expressive-code";
+
+import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
@@ -11,7 +12,7 @@ export default defineConfig({
     title: 'NA Ultimate Strats',
     social: {
       github: 'https://github.com/xtenkay/ulti-strats',
-      twitter: 'https://x.com/_Tenkay_',
+      twitter: 'https://x.com/_Tenkay_'
     },
     sidebar: [{
       label: 'Guides',
@@ -20,23 +21,33 @@ export default defineConfig({
       {
         label: 'UCOB',
         link: '/guides/ucob/',
-        attrs: {class: `ucob-sidebar`}
+        attrs: {
+          class: `ucob-sidebar`
+        }
       }, {
         label: 'UWU',
         link: '/guides/uwu/',
-        attrs: {class: `uwu-sidebar`}
+        attrs: {
+          class: `uwu-sidebar`
+        }
       }, {
         label: 'TEA',
         link: '/guides/tea/',
-        attrs: {class: `tea-sidebar`}
+        attrs: {
+          class: `tea-sidebar`
+        }
       }, {
         label: 'DSR',
         link: '/guides/dsr/',
-        attrs: {class: `dsr-sidebar`}
+        attrs: {
+          class: `dsr-sidebar`
+        }
       }, {
         label: 'TOP',
         link: '/guides/top/',
-        attrs: {class: `top-sidebar`}
+        attrs: {
+          class: `top-sidebar`
+        }
       }]
     }, {
       label: 'Others',
@@ -45,8 +56,7 @@ export default defineConfig({
       {
         label: 'Credits',
         link: '/others/credits/'
-      },
-      {
+      }, {
         label: 'Changelog',
         link: '/others/changelog/'
       }]
@@ -55,7 +65,5 @@ export default defineConfig({
     customCss: [
     // Relative path to your custom CSS file
     './src/styles/custom.css']
-  }), expressiveCode({
-    
-  }), mdx()]
+  }), expressiveCode({}), mdx(), tailwind()]
 });
