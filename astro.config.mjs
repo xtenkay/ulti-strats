@@ -9,6 +9,11 @@ export default defineConfig({
   site: 'https://xtenkay.github.io',
   integrations: [starlight({
     title: 'NA Ultimate Strats',
+    social: {
+      github: 'https://github.com/xtenkay/ulti-strats',
+      twitter: 'https://x.com/_Tenkay_',
+    },
+    
     sidebar: [{
       label: 'Guides',
       items: [

@@ -4,10 +4,11 @@ description: DSR Strats
 ---
 import { Aside } from '@astrojs/starlight/components';
 import { Icon } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
 import Footer from '../../../components/Footer.astro';
 
 <body>
-<img class="ulti-tooltip" src="/dkt.webp"/>
+<Image width="800" height="800" class="ulti-tooltip" loading="eager" alt="Dragonking Thordan" src="/dkt.webp"/>
 
 ### Summary ###
 - [**Vault Knights**](#vault-knights-door-boss): HMRT
@@ -23,14 +24,14 @@ import Footer from '../../../components/Footer.astro';
 - Endwalker Relic Weapons are BiS and have their substats capped at **269**.
 
 <h5>Cheatsheet</h5>
-<img
+<Image
     src="/dsrcheatsheet.png"
     width="400"
     height="300"
     decoding="async"
-    loading="lazy"
+    loading="eager"
     alt="DSR Cheatsheet"
-    onclick="location.href='/dsrcheatsheet.png'"
+    onclick="window.open('/dsrcheatsheet.png','_blank')"
     style="cursor:pointer;"
 />
 (Click for Full-size)
@@ -86,7 +87,7 @@ This guide is not based NA strats but it is a very good visual guide for the mec
     - Triangle WB1
     - Static WB2
     - **Wyrmsbreath 2 Positions**
-    <img
+    <Image
         src="/fixed_wyrmsbreath2.png"
         width="400"
         height="300"
@@ -186,6 +187,7 @@ The pyretic in Cauterize snapshots VERY early, make sure you hit escape (circle 
 ### Challenge Strats (Not for prog or PF) ###
 <details>
 <summary>Wholehogg</summary>
-<iframe class="excalidraw" src="https://link.excalidraw.com/p/readonly/hlyKQ34t3yAJXlmR574R?darkMode=true" width="100%" min-height="5000px" style="border: none;"></iframe>
+<iframe title="Wholehogg" loading="lazy" class="excalidraw" src="https://link.excalidraw.com/p/readonly/hlyKQ34t3yAJXlmR574R?darkMode=true" width="100%" min-height="5000px" style="border: none;"></iframe>
 </details>
+<Footer/>
 </body>

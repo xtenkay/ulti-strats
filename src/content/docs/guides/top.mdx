@@ -4,9 +4,11 @@ description: TOP Strats.
 ---
 import { Aside } from '@astrojs/starlight/components';
 import { Icon } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import Footer from '../../../components/Footer.astro';
 
 
-<img class="ulti-tooltip" src="/top.webp"/>
+<Image width="500" height="500" loading="eager" alt="Alpha Omega" class="ulti-tooltip" src="/top.webp"/>
 
 ### Summary ###
 - [**Beetle**](#beetle): Light Party Prio - H > R > M > T
@@ -23,14 +25,14 @@ import { Icon } from '@astrojs/starlight/components';
 - Endwalker Relic Weapons are BiS and have their substats capped at **287**.
 
 <h5>Cheatsheet</h5>
-<img
+<Image
     src="/TOP_cheat_sheet.png"
     width="400"
     height="300"
     decoding="async"
-    loading="lazy"
+    loading="eager"
     alt="TOP Cheatsheet"
-    onclick="location.href='/TOP_cheat_sheet.png'"
+    onclick="window.open('/TOP_cheat_sheet.png','_blank')"
     style="cursor:pointer;"
 />
 (Click for Full-size)
@@ -85,3 +87,5 @@ This prio is just a suggestion just hit the LB please.
 "Four":{"X":90.0,"Y":0.0,"Z":90.0,"ID":7,"Active":true}}
 ```
 </details>
+
+<Footer/>
