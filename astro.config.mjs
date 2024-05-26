@@ -3,8 +3,6 @@ import starlight from '@astrojs/starlight';
 import mdx from "@astrojs/mdx";
 import expressiveCode from "astro-expressive-code";
 
-import tailwind from "@astrojs/tailwind";
-
 // https://astro.build/config
 export default defineConfig({
   site: 'https://xtenkay.github.io',

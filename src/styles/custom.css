@@ -26,8 +26,14 @@
 	background-color: var(--sl-color-bg);
 }
 
-.sidebar-pane {
+.sidebar-pane{
 	z-index: 0;
+}
+
+ @media(max-width: 800px){
+	.sidebar-pane{
+		z-index: 5;
+	}
 }
 
 h1,
@@ -75,29 +81,35 @@ hr {
 }
 
 /* Colors for the fights on the left sidebar */
+:where(.ucob-sidebar):hover,
 :where(.ucob-sidebar)[aria-current="page"],
 :where(.ucob-sidebar)[aria-current="page"]:hover,
 :where(.ucob-sidebar)[aria-current="page"]:focus {
 	background-color: #ac7522;
 	color: white;
 }
+:where(.uwu-sidebar):hover,
 :where(.uwu-sidebar)[aria-current="page"],
 :where(.uwu-sidebar)[aria-current="page"]:hover,
 :where(.uwu-sidebar)[aria-current="page"]:focus {
 	background-color: #1d5296;
 	color: white;
 }
+:where(.tea-sidebar):hover,
 :where(.tea-sidebar)[aria-current="page"],
 :where(.tea-sidebar)[aria-current="page"]:hover,
 :where(.tea-sidebar)[aria-current="page"]:focus {
 	background-color: #e2d135;
+	color:#202020 !important;
 }
+:where(.dsr-sidebar):hover,
 :where(.dsr-sidebar)[aria-current="page"],
 :where(.dsr-sidebar)[aria-current="page"]:hover,
 :where(.dsr-sidebar)[aria-current="page"]:focus {
 	background-color: #ce3535;
 	color: white;
 }
+:where(.top-sidebar):hover,
 :where(.top-sidebar)[aria-current="page"],
 :where(.top-sidebar)[aria-current="page"]:hover,
 :where(.top-sidebar)[aria-current="page"]:focus {
