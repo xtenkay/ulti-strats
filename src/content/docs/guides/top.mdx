@@ -7,9 +7,17 @@ import { Icon } from '@astrojs/starlight/components';
 import { Image } from 'astro:assets';
 import Footer from '../../../components/Footer.astro';
 
+<link
+  rel="stylesheet"
+  media="(prefers-color-scheme:dark)"
+  href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/dark.css"
+  onload="document.documentElement.classList.add('sl-theme-dark');"
+/>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js"></script>
 
-<Image width="500" height="500" loading="eager" alt="Alpha Omega" class="ulti-tooltip" src="/top.webp"/>
 
+<Image width="400" height="400" loading="eager" alt="Alpha Omega" class="ulti-tooltip" src="/top.webp"/>
+<sl-card class="card-basic ulti-summary">
 ### Summary ###
 - [**Beetle**](#beetle): Light Party Prio - H > R > M > T
 - [**M&F**](#mf): BPOG - GPOB, Party SW for Limitless
@@ -19,7 +27,7 @@ import Footer from '../../../components/Footer.astro';
 - [**Dynamis Sigma**](#sigma): Macro Towers, AM Dynamis
 - [**Dynamis Omega**](#omega): AM for both sets
 - [**Alpha Omega**](#alpha-omega): True Clock Proteans, MT and Prange swap for Meteor, Healers talk about who goes mid (Shield Healer is better middle)
-
+</sl-card>
 <h5>BiS Notes</h5>
 - Mix of i630 (Abyssos) gear, and i635 gear from The Lunar Subterrane.
 - Endwalker Relic Weapons are BiS and have their substats capped at **287**.

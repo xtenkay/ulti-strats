@@ -7,9 +7,17 @@ import { Icon } from '@astrojs/starlight/components';
 import Footer from '../../../components/Footer.astro';
 import { Image } from 'astro:assets';
 
+<link
+  rel="stylesheet"
+  media="(prefers-color-scheme:dark)"
+  href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/dark.css"
+  onload="document.documentElement.classList.add('sl-theme-dark');"
+/>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js"></script>
 
-<Image alt="Bahamut" width="500" height="500" loading="eager" class="ulti-tooltip" src="/ucob.png"/>
 
+<Image alt="Bahamut" width="400" height="400" loading="eager" class="ulti-tooltip" src="/ucob.png"/>
+<sl-card class="card-basic ulti-summary">
 ### Summary ###
 - [**Twintania**](#twintania): Triangle CCW (N, SW, SE)
 - [**Nael**](#nael): Divebombs A>B>C
@@ -21,7 +29,7 @@ import { Image } from 'astro:assets';
 - [**Fellruin**](#bahamut): Tank LB3, Arms Length Twin Dive for safety (Dive goes left of Twin ideally)
 - [**Adds**](#adds): Bosses tanked between 1 and 3
 - [**Golden**](#golden-bahamut): Standard, Tank LB if not full 8 stack
-
+</sl-card>
 <h5>BiS Notes</h5>
 - Any gear at or above 470 will have their substats capped.
 - Relic weapons will have their substats capped at **127**.
@@ -44,6 +52,7 @@ import { Image } from 'astro:assets';
 
 ### Twintania ###
     - Neurolink placement - Normal triangle: N, SW, SE (CCW, on 123 markers)
+    - <a href="https://raidplan.io/plan/9WEG4AEGVdru3hyF" target="_blank">**Raidplan**</a>
     :::caution[Liquid Hell]
         Phys. range always baits liquid hells, caster takes hatch if phys. range is first hatch<br></br>
         Click <a href="https://youtu.be/9DDTla_pbL0" target="_blank">Here</a> for a video on how to do the baits properly!

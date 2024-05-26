@@ -7,8 +7,16 @@ import { Icon } from '@astrojs/starlight/components';
 import Footer from '../../../components/Footer.astro';
 import { Image } from 'astro:assets';
 
-<Image alt="Perfect Alexander" loading="eager" width="500" height="500" class="ulti-tooltip" src="/tea.png"/>
+<link
+  rel="stylesheet"
+  media="(prefers-color-scheme:dark)"
+  href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/dark.css"
+  onload="document.documentElement.classList.add('sl-theme-dark');"
+/>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js"></script>
 
+<Image alt="Perfect Alexander" loading="eager" width="400" height="400" class="ulti-tooltip" src="/tea.png"/>
+<sl-card class="card-basic ulti-summary">
 ### Summary ###
 - [**Living Liquid**](#living-liquid): Stacked
 - [**Limit Cut**](#limit-cut): 1256 W to NE
@@ -17,7 +25,7 @@ import { Image } from 'astro:assets';
 - [**Inception**](#alex-prime): Box Strat, MT Far, OT Mid
 - [**Wormhole**](#alex-prime): Alex is North, Evens Left, Odds Right
 - [**Perfect Alexander**](#perfect-alexander): N/S Final Word, Lightning Right
-
+</sl-card>
 <h5>BiS Notes</h5>
 - Any gear at or above i595 will have their substats capped.
 - Relic weapons will have their substats capped at **184**.

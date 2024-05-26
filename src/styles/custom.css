@@ -61,11 +61,21 @@ hr {
 	max-width: 10%;
 }
 
+#_top{
+	display:flex;
+	justify-content: center;;
+}
+
 /* Images on start of each ulti phase */
 .ulti-tooltip {
-	float: right;
-	max-width: 350px !important;
-	max-height: 400px;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 40%;
+}
+
+.ulti-summary{
+	width: 100%;
 }
 
 /* Hides default Starlight Icons from the colored tips */

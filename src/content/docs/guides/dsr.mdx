@@ -7,9 +7,18 @@ import { Icon } from '@astrojs/starlight/components';
 import { Image } from 'astro:assets';
 import Footer from '../../../components/Footer.astro';
 
-<body>
-<Image width="800" height="800" class="ulti-tooltip" loading="eager" alt="Dragonking Thordan" src="/dkt.webp"/>
 
+<link
+  rel="stylesheet"
+  media="(prefers-color-scheme:dark)"
+  href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/dark.css"
+  onload="document.documentElement.classList.add('sl-theme-dark');"
+/>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js"></script>
+<body>
+<Image width="400" height="400" class="ulti-tooltip" loading="eager" alt="Dragonking Thordan" src="/dkt.webp"/>
+
+<sl-card class="card-basic ulti-summary">
 ### Summary ###
 - [**Vault Knights**](#vault-knights-door-boss): HMRT
 - [**Thordan**](#thordan): DRK Rel, Role adjust
@@ -18,6 +27,7 @@ import Footer from '../../../components/Footer.astro';
 - [**Dark Thordan**](#dark-thordan): Party Right Wrath, Dooms North & Anchor
 - [**Double Dragons**](#double-dragons): Triangle WB1, DTTMC Vow, Static WB2
 - [**Dragonking Thordan**](#dragon-king-thordan): First Akh 3-3-2, Second and Third 6-1-1 (Party NW Tower)
+</sl-card>
 
 <h5>BiS Notes</h5>
 - Mix of i600 (Asphodelos) gear, and i605 gear from Lapis Manalis.

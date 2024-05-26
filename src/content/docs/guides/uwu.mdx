@@ -7,19 +7,27 @@ import { Icon } from '@astrojs/starlight/components';
 import Footer from '../../../components/Footer.astro';
 import { Image } from 'astro:assets';
 
+<link
+  rel="stylesheet"
+  media="(prefers-color-scheme:dark)"
+  href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/dark.css"
+  onload="document.documentElement.classList.add('sl-theme-dark');"
+/>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js"></script>
+
 :::danger[UNDER CONSTRUCTION]
 UWU has a lot of very old resources that are really not up to par with current ones for more recent fights. Some friends that do a lot of UWU are in the process of making new resources for the fight so once they are done i'll update this page with the new stuff
 :::
 
-<Image height="500" width="500" alt="Ultima" loading="eager" class="ulti-tooltip" src="/uwu.webp"/>
-
+<Image height="400" width="400" alt="Ultima" loading="eager" class="ulti-tooltip" src="/uwu.webp"/>
+<sl-card class="card-basic ulti-summary">
 ### Summary ###
 - [**Garuda**](#garuda): Centeruda
 - [**Ifrit**](#ifrit): Z Nails, Skip Dashes
 - [**Titan**](#titan): AM Gaols
 - [**Transition**](#transition): LB Cheese first Tank Purge
 - [**Ultima**](#ultima): 2222/2211 Annihilation, Party SE>NE Booms Tanks SW>NW
-
+</sl-card>
 <h5>BiS Notes</h5>
 - Any gear at or above i500 will have their substats capped.
 - Relic weapons will have their substats capped at **136**.
