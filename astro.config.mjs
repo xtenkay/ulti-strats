@@ -65,5 +65,5 @@ export default defineConfig({
     customCss: [
     // Relative path to your custom CSS file
     './src/styles/custom.css']
-  }), expressiveCode({}), mdx(), tailwind()]
+  }), expressiveCode({}), mdx()]
 });
