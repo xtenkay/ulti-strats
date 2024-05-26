@@ -13,7 +13,6 @@ export default defineConfig({
       github: 'https://github.com/xtenkay/ulti-strats',
       twitter: 'https://x.com/_Tenkay_',
     },
-    
     sidebar: [{
       label: 'Guides',
       items: [
@@ -57,8 +56,6 @@ export default defineConfig({
     // Relative path to your custom CSS file
     './src/styles/custom.css']
   }), expressiveCode({
-    styleOverrides: {
-      codeLineHeight: 0.5,
-    }
+    
   }), mdx()]
 });
