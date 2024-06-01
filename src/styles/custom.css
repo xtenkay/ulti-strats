@@ -55,6 +55,16 @@ hr {
 	min-height: 600px;
 }
 
+.suggestions-complaints {
+	position:fixed;
+	right:2%;
+}
+
+.contact-form{
+	min-height:1000px;
+	min-width:50%;
+}
+
 /* Playstation Macro for Vault Knights */
 .dkt-macro {
 	min-width: 200px;

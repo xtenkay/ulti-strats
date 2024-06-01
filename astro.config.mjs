@@ -54,7 +54,11 @@ export default defineConfig({
       {
         label: 'Credits',
         link: '/others/credits/'
-      }, ]
+      },
+    {
+      label: 'Contact / Feedback',
+        link: '/others/contact/'
+    } ]
     }],
     pagination: false,
     customCss: [
