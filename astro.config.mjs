@@ -47,7 +47,7 @@ export default defineConfig({
   },
   social: {
     github: 'https://github.com/xtenkay/ulti-strats',
-    twitter: 'https://x.com/_Tenkay_'
+    twitter: 'https://x.com/tenkayshijou'
   },
   vite: {
     resolve: {
