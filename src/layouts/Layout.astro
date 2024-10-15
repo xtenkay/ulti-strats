@@ -35,13 +35,38 @@ const editUrl = `${basePath}src/pages${pagePath}.mdx`;
 
 ---
 
-<script is:inline>
-  window.localStorage.setItem("theme", "dark");
-</script>
-
 <!doctype html>
 <html lang="en"
   <head>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const siteNav = document.querySelector(".site-nav");
+        const siteSearch = document.querySelector(".main-search");
+    
+        menuToggle.addEventListener("click", () => {
+          siteNav.classList.toggle("hidden");
+          siteSearch.classList.toggle("hidden");
+        });
+      });
+    
+      const themeStorage = (() => {
+        if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
+          return localStorage.getItem("theme");
+        }
+        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+          return "dark";
+        }
+        return "light";
+      })();
+    
+      if (themeStorage === "light") {
+        document.documentElement.classList.remove("dark");
+      } else {
+        document.documentElement.classList.add("dark");
+      }
+      window.localStorage.setItem("theme", themeStorage);
+    </script>
     <meta charset="UTF-8" />
     <meta
       name="description"
