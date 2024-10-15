@@ -56,6 +56,10 @@ const editUrl = `${basePath}src/pages${pagePath}.mdx`;
     </title>
   </head>
   <body>
+    <script>
+      const theme = localStorage.getItem("theme") || "light";
+      document.documentElement.dataset.theme = theme;
+    </script>
     <div class="container mx-auto">
       <div class="grid grid-cols-12">
         <div
