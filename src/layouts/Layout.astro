@@ -38,46 +38,6 @@ const editUrl = `${basePath}src/pages${pagePath}.mdx`;
 <!doctype html>
 <html lang="en"
   <head>
-    <script is:inline>
-      // The configured mode is stored in local storage
-      const isDarkMode = localStorage.getItem('darkMode');
-  
-      // Set theme to 'dark' if darkMode = 'true'
-      const theme = isDarkMode === 'true' ? 'dark' : '';
-  
-      // Put dark class on html tag to enable dark mode
-      document.querySelector("html").className = theme;
-  
-    </script>
-    <script is:inline>
-      document.addEventListener("DOMContentLoaded", () => {
-        const menuToggle = document.querySelector(".menu-toggle");
-        const siteNav = document.querySelector(".site-nav");
-        const siteSearch = document.querySelector(".main-search");
-    
-        menuToggle.addEventListener("click", () => {
-          siteNav.classList.toggle("hidden");
-          siteSearch.classList.toggle("hidden");
-        });
-      });
-    
-      const themeStorage = (() => {
-        if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
-          return localStorage.getItem("theme");
-        }
-        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-          return "dark";
-        }
-        return "light";
-      })();
-    
-      if (themeStorage === "light") {
-        document.documentElement.classList.remove("dark");
-      } else {
-        document.documentElement.classList.add("dark");
-      }
-      window.localStorage.setItem("theme", themeStorage);
-    </script>
     <meta charset="UTF-8" />
     <meta
       name="description"
@@ -163,10 +123,6 @@ const editUrl = `${basePath}src/pages${pagePath}.mdx`;
                   <div class="max-w-xl lg:absolute top-4 w-full">
                     
                   </div>
-                </div>
-
-                <div class="my-auto first-line:justify-end flex-none px-8">
-                  <ThemeIcon />
                 </div>
               </div>
             </div>
