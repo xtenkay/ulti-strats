@@ -7,6 +7,7 @@ interface Props {
     children?: {
       title: string;
       slug: string;
+      nav_order?: number;
     }[];
   }[];
 }
@@ -26,6 +27,7 @@ console.log(navigation);
             <a href={item.slug} class="text-base font-bold">
               {item.title}
             </a>
+            
             {item.children && item.children.length > 0 && (
               <button class="toggle-button" data-index={index}>
                 <svg
@@ -51,7 +53,10 @@ console.log(navigation);
               class="submenu pl-3 border-l mt-2 mb-3 border-zinc-600 border-zinc-500"
               data-submenu-index={index}
             >
-              {item.children.map((child) => (
+              {
+              item.children
+              .sort((a, b) => a.nav_order - b.nav_order)
+              .map((child) => (
                 <li>
                   <a href={child.slug}>{child.title}</a>
                 </li>
