@@ -20,9 +20,5 @@ export const OPEN_GRAPH = {
 };
 
 export const SIDEBAR = [
-  { title: "Ultimate Coil of Bahamut", url: "/ucob" },
-  { title: "Ultima Weapon's Refrain", url: "/uwu" },
-  { title: "The Epic of Alexander", url: "/tea" },
-  { title: "Dragonsong's Reprise", url: "/dsr" },
-  { title: "The Omega Protocol", url: "/top" },
+
 ];

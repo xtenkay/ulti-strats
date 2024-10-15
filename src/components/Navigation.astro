@@ -14,15 +14,13 @@ const { navigation } = Astro.props;
 ---
 
 <ul>
-  
   {
-    // Disabled because i could not find a way to change the sorting order
     
     navigation.map((item, index) => (
       <Fragment>
         <li class="py-1">
           <span class="flex justify-between">
-            <a class="text-base font-bold" href={item.slug}>
+            <a class="text-base font-bold">
               {item.title}
             </a>
             {item.children && item.children.length > 0 && (

@@ -7,6 +7,7 @@ const pagesDirectory = join(process.cwd(), 'src', 'pages');
 interface NavigationItem {
   slug: string;
   title: string;
+  nav_order?: number;
   children?: NavigationItem[];
 }
 

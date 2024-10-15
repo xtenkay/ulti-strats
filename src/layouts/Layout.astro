@@ -4,8 +4,13 @@ import type { MarkdownHeading } from "astro";
 import ThemeIcon from "../components/ThemeIcon.astro";
 import TableOfContents from "../components/TableOfContents.astro";
 import Footer from '../../src/components/Footer.astro';
+import { getNavigationStructure } from "../utils/getNavigationStructure";
+import Navigation from "../components/Navigation.astro";
 
 import "../styles/globals.scss";
+
+// Get the navigation structure
+const navigation = getNavigationStructure();
 
 interface Props {
   content: {
@@ -92,6 +97,7 @@ const editUrl = `${basePath}src/pages${pagePath}.mdx`;
             </div>
           </header>
           <nav class="site-nav py-5 md:py-0 px-8 hidden md:block">
+            <Navigation navigation={navigation} />
             {
               CONFIG.SIDEBAR && (
                 <div class="mt-8">
