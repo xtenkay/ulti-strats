@@ -1,0 +1,19 @@
+.endpoint {
+  @apply my-8;
+
+  .endpoint-title {
+    @apply mb-0 font-black text-2xl;
+  }
+
+  .endpoint-types {
+    @apply flex space-x-2 my-auto;
+  }
+
+  .endpoint-type {
+    @apply text-xs px-2 py-0.5 bg-zinc-300 text-black rounded-sm mb-0 my-auto font-bold font-mono;
+  }
+
+  .endpoint-url {
+    @apply text-sm text-black mb-0 bg-highlighter inline-block px-2 py-0.5 rounded-sm font-mono font-bold;
+  }
+}

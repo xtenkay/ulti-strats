@@ -1,0 +1,19 @@
+---
+// Define the interface for Props to ensure type safety
+interface Props {
+  title?: string;
+  class?: string;
+  type?: string;
+}
+
+const props = Astro.props as Props;
+const notificationClass =
+  `notification ${props.type ? `notification-${props.type}` : "notification-default"} ${props.class || ""}`.trim();
+---
+
+<div class={notificationClass}>
+  {props.title && <p class="notification-title">{props.title}</p>}
+  <div>
+    <slot />
+  </div>
+</div>

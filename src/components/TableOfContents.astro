@@ -1,0 +1,48 @@
+---
+import type { MarkdownHeading } from "astro";
+import ToCLinks from "./ToCLinks.astro";
+
+export type Props = {
+  headings: MarkdownHeading[];
+  depth?: number;
+};
+
+const { headings, depth = 2 } = Astro.props;
+---
+
+<aside class="content-sidebar md:sticky md:top-10 mb-8">
+  <div class="toc-header">
+    <h2 class="text-xl">On This Page</h2>
+    <span class="toc-current-section hidden"></span>
+  </div>
+
+  <nav class="content-toc my-3 my-md-0">
+    <ToCLinks headings={headings} depth={depth} />
+  </nav>
+</aside>
+
+<script>
+  import scrollSpy from "simple-scrollspy";
+
+  const $currentSection = document.querySelector<HTMLElement>(
+    ".toc-current-section"
+  );
+
+  const updateCurrent = ($active: HTMLElement | null) => {
+    if ($active && $currentSection) {
+      $currentSection.innerHTML = $active.innerHTML;
+    }
+  };
+
+  updateCurrent(
+    document.querySelector<HTMLElement>(
+      ".content-sidebar nav ul li:first-child a"
+    )
+  );
+
+  scrollSpy(".content-sidebar nav", {
+    sectionClass: ".main-content section",
+    offset: window.innerWidth <= 768 ? 150 : 100,
+    onActive: updateCurrent,
+  });
+</script>

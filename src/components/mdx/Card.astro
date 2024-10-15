@@ -1,0 +1,18 @@
+---
+// Define the props interface
+interface Props {
+  title?: string;
+  class?: string;
+}
+
+const props = Astro.props as Props;
+const cardClass =
+  `card ${props.class || ""}`.trim();
+---
+
+<div class={cardClass}>
+  {props.title && <p class="card-title">{props.title}</p>}
+  <div>
+    <slot />
+  </div>
+</div>

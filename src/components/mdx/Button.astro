@@ -1,0 +1,12 @@
+---
+const props = Astro.props;
+
+interface Props {
+  href?: string;
+  class?: string;
+}
+---
+
+<a {...props} href="{ props.href || '#' }" class="{ props.class || 'btn btn-primary' }">
+  <slot />
+</a>

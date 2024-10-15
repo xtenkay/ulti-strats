@@ -1,0 +1,17 @@
+---
+layout: '@/layouts/Layout.astro'
+title: "Search"
+metaTitle: "Search"
+metaDescription: "Astro Just Docs has built-in search, powered by PageFind."
+---
+
+Astro Just Docs is powered by PageFind. Indexing happens during build time. The's no additional services that need to be registered, or outside API calls. For local development and testing, you'll need to occasionally rebuild the site to update the search results.
+
+## Generating search results
+
+Search results are generated automatically on site build (`yarn build`).
+
+## Hiding pages from search
+
+Currently all MDX files will be indexed and fully searchable. Allowing pages to be flagged as not indexed is a planned feature for the future.
+
