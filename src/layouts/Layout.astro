@@ -39,6 +39,13 @@ const editUrl = `${basePath}src/pages${pagePath}.mdx`;
 <html lang="en"
   <head>
     <script>
+      if (localStorage.getItem('dark-mode') === 'true' || (!('dark-mode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.querySelector('html').classList.add('dark');
+      } else {
+          document.querySelector('html').classList.remove('dark');
+      }
+      </script>
+    <script>
       document.addEventListener("DOMContentLoaded", () => {
         const menuToggle = document.querySelector(".menu-toggle");
         const siteNav = document.querySelector(".site-nav");
