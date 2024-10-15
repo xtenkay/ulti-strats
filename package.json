@@ -27,6 +27,7 @@
     "gray-matter": "^4.0.3",
     "hastscript": "^9.0.0",
     "mdast-util-mdxjs-esm": "^2.0.1",
+    "next-themes": "^0.3.0",
     "pagefind": "^1.0.4",
     "preact": "^10.20.0",
     "precss": "^4.0.0",
