@@ -3,6 +3,7 @@ interface Props {
   navigation: {
     title: string;
     slug: string;
+    nav_order?: number;
     children?: {
       title: string;
       slug: string;
@@ -11,6 +12,8 @@ interface Props {
 }
 
 const { navigation } = Astro.props;
+navigation.sort((a, b) => a.nav_order - b.nav_order)
+console.log(navigation);
 ---
 
 <ul>
@@ -20,7 +23,7 @@ const { navigation } = Astro.props;
       <Fragment>
         <li class="py-1">
           <span class="flex justify-between">
-            <a class="text-base font-bold">
+            <a href={item.slug} class="text-base font-bold">
               {item.title}
             </a>
             {item.children && item.children.length > 0 && (
