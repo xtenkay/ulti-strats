@@ -1,5 +1,5 @@
 .btn {
-  @apply bg-white text-black border-2 border-black rounded font-mono font-bold px-5 py-2 inline-block shadow-[3px_3px_0_-1px_#fff,_3px_3px_0_#fff]transition-all duration-150 ease-in-out mb-2;
+  @apply bg-white text-black border-2 border-black rounded font-mono font-bold px-5 py-2 inline-block shadow-[3px_3px_0_-1px_#fff,_3px_3px_0_#fff] transition-all duration-150 ease-in-out mb-2;
   text-decoration: none !important;
 
   &:hover {
