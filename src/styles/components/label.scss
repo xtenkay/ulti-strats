@@ -1,6 +1,5 @@
 .label {
   @apply text-sm font-bold text-black bg-white inline-block px-2 py-1 rounded-sm border border-black;
-  @apply dark:text-black;
 
   &.label-primary-light {
     @apply bg-primary-light text-black border-primary;

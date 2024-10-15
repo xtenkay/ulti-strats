@@ -6,7 +6,7 @@
     @apply mb-4;
 
     code {
-      @apply p-1 bg-gray-800 dark:bg-gray-800 border border-gray-700 dark:border-gray-700 rounded text-sm;
+      @apply p-1 bg-gray-800 border border-gray-700 rounded text-sm;
     }
   }
 
@@ -63,7 +63,6 @@
 
       &::before {
         @apply absolute -left-7 bg-white text-black w-5 h-5 flex items-center justify-center text-xs font-bold font-mono;
-        @apply dark:bg-white dark:text-black;
         content: counter(step-counter) '';
         counter-increment: step-counter;
       }

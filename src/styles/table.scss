@@ -1,11 +1,9 @@
 .main-content {
   table {
       @apply table-auto min-w-full border-separate border border-white border-spacing-0 mb-11;
-      @apply dark:border-white;
   }
   th, td {
     @apply min-w-[120px] py-2 px-3 border-b border-white;
-    @apply dark:border-white;
     &:first-of-type {
       @apply border-l-0;
     }
@@ -28,7 +26,6 @@
   thead {
     th {
       @apply border-b border-black bg-white text-black font-mono;
-      @apply dark:bg-white dark:text-black;
     }
   }
 }

@@ -1,6 +1,5 @@
 .btn {
-  @apply bg-white border-2 border-black rounded font-mono font-bold px-5 py-2 inline-block shadow-[3px_3px_0_-1px_#000,_3px_3px_0_#000] transition-all duration-150 ease-in-out mb-2;
-  @apply dark:shadow-[3px_3px_0_-1px_#fff,_3px_3px_0_#fff] dark:border-black dark:bg-white dark:text-black;
+  @apply bg-white text-black border-2 border-black rounded font-mono font-bold px-5 py-2 inline-block shadow-[3px_3px_0_-1px_#fff,_3px_3px_0_#fff]transition-all duration-150 ease-in-out mb-2;
   text-decoration: none !important;
 
   &:hover {
@@ -20,27 +19,22 @@
   }
 
   &.btn-primary {
-    @apply bg-primary text-black;
-    @apply dark:shadow-primary;
+    @apply bg-primary text-black shadow-primary;
   }
 
   &.btn-primary-light {
-    @apply bg-primary-light text-black;
-    @apply dark:shadow-primary-light;
+    @apply bg-primary-light text-black shadow-primary-light;
   }
 
   &.btn-secondary {
-    @apply bg-secondary text-black;
-    @apply dark:shadow-secondary;
+    @apply bg-secondary text-black shadow-secondary;
   }
 
   &.btn-secondary-light {
-    @apply bg-secondary-light text-black;
-    @apply dark:shadow-secondary-light;
+    @apply bg-secondary-light text-black shadow-secondary-light;
   }
 
   &.btn-highlighter {
-    @apply bg-highlighter text-black;
-    @apply dark:shadow-highlighter;
+    @apply bg-highlighter text-black shadow-highlighter;
   }
 }

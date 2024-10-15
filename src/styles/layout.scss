@@ -2,7 +2,6 @@ html,
 body {
   
   @apply bg-slate-800 text-gray-300 min-h-screen;
-  @apply dark:bg-slate-800 dark:text-gray-300;
  
   scroll-behavior: smooth;
 }
@@ -10,7 +9,6 @@ body {
 .sidebar {
   @apply relative bg-slate-900 before:bg-slate-900 border-r-transparent;
   @apply before:content-[''] before:block before:w-[9999px] before:h-full before:bg-slate-50 before:absolute before:top-0 before:left-[-9999px] before:z-10 before:transition-transform before:duration-300 before:ease-in-out;
-  @apply dark:bg-slate-900 dark:before:bg-slate-900 dark:border-r-transparent;
 }
 
 a {
@@ -20,7 +18,6 @@ a {
 .border-color {
   @apply border-gray-200;
   @apply border-slate-500;
-  @apply dark:border-slate-500;
 }
 
 
