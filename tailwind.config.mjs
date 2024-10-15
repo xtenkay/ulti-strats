@@ -3,7 +3,7 @@ import { t } from './dist/_astro/client.DSlHJlSR';
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
-  darkMode: "class",
+  darkMode: "selector",
   theme: {
     extend: {
       colors: {
