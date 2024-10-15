@@ -1,68 +1,60 @@
-import { defineConfig } from 'astro/config';
-import starlight from '@astrojs/starlight';
+import { defineConfig } from "astro/config";
+import tailwind from "@astrojs/tailwind";
+import preact from "@astrojs/preact";
+import pagefind from "astro-pagefind";
 import mdx from "@astrojs/mdx";
+import { fileURLToPath } from "url";
+import path from "path";
+import rehypeAutolinkHeadings from "rehype-autolink-headings";
+import rehypeSlug from "rehype-slug";
 import expressiveCode from "astro-expressive-code";
+import { pluginLineNumbers } from "@expressive-code/plugin-line-numbers";
+
+// Remark
+import remarkSectionize from "./src/utils/remark/sectionize";
+
+
+const projectRootDir = path.dirname(fileURLToPath(import.meta.url));
+
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://xtenkay.github.io',
-  integrations: [starlight({
-    title: 'NA Ultimate Strats',
-    social: {
-      github: 'https://github.com/xtenkay/ulti-strats',
-      twitter: 'https://x.com/_Tenkay_'
-    },
-    sidebar: [{
-      label: 'Guides',
-      items: [
-      // Each item here is one entry in the navigation menu.
-      {
-        label: 'UCOB',
-        link: '/guides/ucob/',
-        attrs: {
-          class: `ucob-sidebar`
-        }
-      }, {
-        label: 'UWU',
-        link: '/guides/uwu/',
-        attrs: {
-          class: `uwu-sidebar`
-        }
-      }, {
-        label: 'TEA',
-        link: '/guides/tea/',
-        attrs: {
-          class: `tea-sidebar`
-        }
-      }, {
-        label: 'DSR',
-        link: '/guides/dsr/',
-        attrs: {
-          class: `dsr-sidebar`
-        }
-      }, {
-        label: 'TOP',
-        link: '/guides/top/',
-        attrs: {
-          class: `top-sidebar`
-        }
-      }]
-    }, {
-      label: 'Others',
-      items: [
-      // Each item here is one entry in the navigation menu.
-      {
-        label: 'Credits',
-        link: '/others/credits/'
+  integrations: [
+    preact(),
+    tailwind(),
+    expressiveCode({
+      theme: "synthwave-84",
+      code: {
+        lineNumbers: true,
+        highlight: true,
       },
-    {
-      label: 'Contact / Feedback',
-        link: '/others/contact/'
-    } ]
-    }],
-    pagination: false,
-    customCss: [
-    // Relative path to your custom CSS file
-    './src/styles/custom.css']
-  }), expressiveCode({}), mdx()]
+      plugins: [pluginLineNumbers()],
+    }),
+    mdx(),
+    pagefind(),
+  ],
+  markdown: {
+    remarkPlugins: [remarkSectionize],
+    rehypePlugins: [
+      rehypeSlug,
+      [
+        rehypeAutolinkHeadings,
+        {
+          behavior: "append",
+        },
+      ],
+    ],
+  },
+  social: {
+    github: 'https://github.com/xtenkay/ulti-strats',
+    twitter: 'https://x.com/_Tenkay_'
+  },
+  vite: {
+    resolve: {
+      alias: {
+        "@": path.resolve(projectRootDir, "src"),
+      },
+    },
+  },
 });
+

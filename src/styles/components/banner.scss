@@ -1,0 +1,22 @@
+.banner {
+  @apply bg-black text-white py-5 px-8 mb-8;
+  @apply dark:bg-primary;
+
+  .banner-inner {
+    @apply flex justify-between items-center gap-x-11;
+  }
+
+  .banner-title {
+    @apply mb-0 text-lg font-black;
+  }
+
+  .btn.btn-banner {
+    @apply mb-0;
+    @apply shadow-[3px_3px_0_-1px_#fff,_3px_3px_0_#fff] border-black bg-white text-black;
+    @apply dark:shadow-[3px_3px_0_-1px_#000,_3px_3px_0_#000];
+
+    &:hover {
+    @apply shadow-[0_0_0_-1px_#000,_0_0_0_#000] translate-x-[3px] translate-y-[3px];
+  }
+  }
+}

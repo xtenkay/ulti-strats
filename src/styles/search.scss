@@ -1,0 +1,13 @@
+.pagefind-ui__drawer {
+  @apply relative z-10 bg-white px-8;
+}
+
+.dark {
+  .pagefind-ui__search-input {
+    @apply bg-slate-700 text-white border-slate-600;
+  }
+}
+
+.pagefind-ui__search-input {
+  outline: none !important;
+}

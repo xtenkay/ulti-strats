@@ -1,0 +1,30 @@
+---
+// Define the interface for Props to ensure type safety
+interface Props {
+  title: string;
+  button?: string;
+  link?: string;
+}
+
+const props = Astro.props as Props;
+---
+
+<div class="banner">
+  <div class="banner-inner">
+    {
+      props.title && (
+        <div class="max-w-md">
+          <p class="banner-title">{props.title}</p>
+        </div>
+      )
+    }
+
+    {
+      props.button && props.link && (
+        <a href={props.link} class="btn btn-sm btn-banner">
+          {props.button}
+        </a>
+      )
+    }
+  </div>
+</div>

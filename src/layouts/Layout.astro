@@ -1,0 +1,215 @@
+---
+import * as CONFIG from "../config";
+import type { MarkdownHeading } from "astro";
+import Navigation from "../components/Navigation.astro";
+import ThemeIcon from "../components/ThemeIcon.astro";
+import TableOfContents from "../components/TableOfContents.astro";
+import SearchField from "../components/SearchField.astro";
+import Footer from '../../src/components/Footer.astro';
+
+import "../styles/globals.scss";
+
+interface Props {
+  content: {
+    title: string;
+    description: string;
+    metaTitle?: string;
+    metaDescription?: string;
+  };
+  headings: MarkdownHeading[];
+}
+
+const {
+  content: { title, description, metaTitle, metaDescription },
+  headings,
+} = Astro.props;
+
+const basePath = `${CONFIG.GITHUB.repo}/blob/${CONFIG.GITHUB.branch}/`;
+let pagePath = Astro.url.pathname; // Gets the URL path, like '/blog/my-post'
+
+// if the page is a directory, append 'index' to the path
+if (pagePath.endsWith("/")) {
+  pagePath += "index";
+}
+
+// Get the current page's URL on GitHub
+const editUrl = `${basePath}src/pages${pagePath}.mdx`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content={description
+        ? `${metaDescription || description} - ${CONFIG.SITE.description}`
+        : CONFIG.SITE.description}
+    />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>
+      {
+        title
+          ? `${metaTitle || title} - ${CONFIG.SITE.title}`
+          : CONFIG.SITE.title
+      }
+    </title>
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <div class="grid grid-cols-12">
+        <div
+          class="sidebar col-span-12 md:col-span-4 lg:col-span-3 xl:col-span-3 2xl:col-span-2 md:min-h-screen"
+        >
+          <header
+            class="md:h-20 py-3 md:py-0 border-b md:mb-8 border-color flex justify-between"
+          >
+            <div class="px-8 mt-auto mb-0">
+              <h1 class="text-3xl font-bold py-2 text-primary">
+                <a href="/">{CONFIG.SITE.title}</a>
+              </h1>
+            </div>
+
+            <div class="my-auto mr-8 md:hidden">
+              <button
+                class="border p-2 border-black dark:border-white rounded-sm menu-toggle"
+              >
+                <svg
+                  class="w-6 h-6 text-black dark:text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+              </button>
+            </div>
+          </header>
+          <nav class="site-nav py-5 md:py-0 px-8 hidden md:block">
+            {
+              CONFIG.SIDEBAR && (
+                <div class="mt-8">
+                  <ul class="mt-0">
+                    {CONFIG.SIDEBAR.map((item) => (
+                      <Fragment>
+                        <li class="py-1">
+                          <span class="flex justify-between">
+                            <a class="text-base font-bold" href={item.url}>
+                              {item.title}
+                            </a>
+                          </span>
+                        </li>
+                      </Fragment>
+                    ))}
+                  </ul>
+                </div>
+              )
+            }
+          </nav>
+        </div>
+        <div
+          class="col-span-12 md:col-span-8 lg:col-span-9 xl:col-span-9 2xl:col-span-10"
+        >
+          <main class="mb-8">
+            <div class="main-search hidden md:block">
+              <div class="flex border-b border-color gap-x-8 h-20">
+                <div class="flex-1 px-8 my-auto">
+                  <div class="max-w-xl lg:absolute top-4 w-full">
+                    
+                  </div>
+                </div>
+
+                <div class="my-auto first-line:justify-end flex-none px-8">
+                  <ThemeIcon />
+                </div>
+              </div>
+            </div>
+
+            <article class="px-8 lg:px-11 py-8">
+              <header class="max-w-2xl">
+                <h1 class="text-5xl font-black mb-2">{title}</h1>
+                <p class="text-2xl text-grey-dk-000 mb-8">
+                  {metaDescription}
+                </p>
+              </header>
+
+              <div class="grid grid-cols-12 lg:gap-x-16">
+                <div class="col-span-12 lg:col-span-9 order-2 lg:order-1">
+                  <section class="main-content">
+                    <slot />
+                  </section>
+                </div>
+
+                <div class="col-span-12 lg:col-span-3 order-1 lg:order-2">
+                  {
+                    headings && headings.length > 0 && (
+                      <TableOfContents headings={headings} />
+                    )
+                  }
+                </div>
+              </div>
+            </article>
+          </main>
+
+          <footer class="text-sm px-8 py-8 text-gray-400 border-t border-color">
+            <p>
+              Powered by <a
+                class="underline"
+                href="https://github.com/underlost/astro-just-docs"
+                >Astro Just Docs</a
+              >.
+            </p>
+            <p class="text-xs mb-4">
+              Copyright &copy; {new Date().getFullYear()} Tyler Rilling. Distributed
+              by an <a
+                href="https://github.com/underlost/astro-just-docs/LICENSE"
+                >MIT license</a
+              >.
+            </p>
+            
+          </footer>
+          <br></br>
+          <br></br>
+          <Footer/>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const siteNav = document.querySelector(".site-nav");
+    const siteSearch = document.querySelector(".main-search");
+
+    menuToggle.addEventListener("click", () => {
+      siteNav.classList.toggle("hidden");
+      siteSearch.classList.toggle("hidden");
+    });
+  });
+
+  const themeStorage = (() => {
+    if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
+      return localStorage.getItem("theme");
+    }
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      return "dark";
+    }
+    return "light";
+  })();
+
+  if (themeStorage === "light") {
+    document.documentElement.classList.remove("dark");
+  } else {
+    document.documentElement.classList.add("dark");
+  }
+  window.localStorage.setItem("theme", themeStorage);
+</script>

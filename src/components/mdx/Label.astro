@@ -1,0 +1,11 @@
+---
+const props = Astro.props;
+
+interface Props {
+  class?: string;
+}
+---
+
+<span {...props} class="{ props.class || 'label inline-block' }">
+  <slot />
+</span>

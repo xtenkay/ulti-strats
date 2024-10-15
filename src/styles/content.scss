@@ -1,0 +1,163 @@
+// Styles for rendered markdown in the .main-content container
+
+.main-content {
+
+  p {
+    @apply mb-4;
+
+    code {
+      @apply p-1 bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded text-sm;
+    }
+  }
+
+  hr {
+    @apply my-6 border-t border-gray-200;
+  }
+
+  a:not(.btn) {
+    @apply text-primary underline;
+  }
+
+  a:not(.btn):hover {
+    @apply opacity-50;
+  }
+
+
+  ol,
+  ul,
+  dl,
+  pre,
+  address,
+  blockquote,
+  .table-wrapper {
+    @apply mt-3;
+  }
+
+  a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  ul,
+  ol {
+    @apply pl-5;
+
+    & ~ p {
+      @apply mt-4;
+    }
+  }
+
+  li {
+    .highlight {
+      @apply mt-2;
+    }
+  }
+
+  ol {
+    list-style-type: none;
+    counter-reset: step-counter;
+
+    > li {
+      @apply relative ml-5;
+
+      &::before {
+        @apply absolute -left-7 bg-black text-white w-5 h-5 flex items-center justify-center text-xs font-bold font-mono;
+        @apply dark:bg-white dark:text-black;
+        content: counter(step-counter) '';
+        counter-increment: step-counter;
+      }
+
+      ol {
+        counter-reset: sub-counter;
+
+        li {
+          &::before {
+            content: counter(sub-counter, lower-alpha);
+            counter-increment: sub-counter;
+          }
+        }
+      }
+    }
+  }
+
+  ul {
+    @apply list-none;
+
+    > li {
+      @apply relative;
+      &::before {
+        @apply absolute -left-2.5;
+        content: "•";
+        
+      }
+    }
+  }
+
+  ul.contains-task-list {
+    list-style-type: none;
+    @apply pl-0;
+
+    > li {
+      @apply relative;
+      &::before {
+        content: '';
+      }
+    }
+  }
+
+  dl {
+    @apply grid grid-cols-2 gap-2 my-5;
+    dt {
+      @apply font-bold text-right;
+    }
+  }
+
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    position: relative;
+    margin-top: 1.5em;
+    margin-bottom: 0.25em;
+
+    code {
+      @apply text-zinc-500;
+    }
+
+    &:first-child {
+      @apply mt-2;
+    }
+
+    .icon-link {
+      @apply opacity-0 pl-2 ease-in-out transition duration-200;
+      &::before {
+        content: '#';
+        @apply text-primary;
+      }
+    }
+
+    &:hover .icon-link {
+      display: inline-block;
+      @apply opacity-100;
+    }
+
+    + table,
+    + .table-wrapper,
+    + .code-example,
+    + .highlighter-rouge {
+      margin-top: 1em;
+    }
+
+    + p {
+      margin-top: 0;
+    }
+  }
+
+  .astro-code {
+    @apply p-4 rounded mb-4;
+  }
+}

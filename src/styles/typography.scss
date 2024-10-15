@@ -1,0 +1,39 @@
+// Typography
+
+h1,
+.h1{
+  @apply text-4xl font-black leading-relaxed;
+}
+
+h2,
+.h2 {
+  @apply text-3xl font-black;
+}
+
+h3,
+.h3 {
+  @apply text-2xl font-black;
+}
+
+h4,
+.h4 {
+  @apply text-xl font-black leading-relaxed uppercase;
+}
+
+h4 code {
+  text-transform: none;
+}
+
+h5,
+.h5 {
+  @apply text-lg font-black uppercase;
+}
+
+h6,
+.h6 {
+  @apply text-base font-black uppercase;
+}
+
+.text-small {
+  @apply text-sm;
+}

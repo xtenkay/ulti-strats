@@ -1,0 +1,19 @@
+.notification {
+  @apply bg-slate-300 border-l-slate-400 py-5 px-8 border-l-8 my-8 text-black;
+
+  .notification-title {
+    @apply mb-2 font-black text-lg;
+  }
+
+  &.notification-primary {
+    @apply bg-primary-light border-l-primary;
+  }
+
+  &.notification-secondary {
+    @apply bg-secondary-light border-l-secondary;
+  }
+
+  &.notification-notice {
+    @apply bg-highlighter border-l-highlighter-dark;
+  }
+}
