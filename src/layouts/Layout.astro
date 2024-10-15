@@ -1,16 +1,13 @@
 ---
 import * as CONFIG from "../config";
 import type { MarkdownHeading } from "astro";
-import { getNavigationStructure } from "../utils/getNavigationStructure";
 import Navigation from "../components/Navigation.astro";
 import ThemeIcon from "../components/ThemeIcon.astro";
 import TableOfContents from "../components/TableOfContents.astro";
 import SearchField from "../components/SearchField.astro";
+import Footer from '../../src/components/Footer.astro';
 
 import "../styles/globals.scss";
-
-// Get the navigation structure
-const navigation = getNavigationStructure();
 
 interface Props {
   content: {
@@ -70,7 +67,7 @@ const editUrl = `${basePath}src/pages${pagePath}.mdx`;
             class="md:h-20 py-3 md:py-0 border-b md:mb-8 border-color flex justify-between"
           >
             <div class="px-8 mt-auto mb-0">
-              <h1 class="text-xl font-bold py-2 text-primary">
+              <h1 class="text-3xl font-bold py-2 text-primary">
                 <a href="/">{CONFIG.SITE.title}</a>
               </h1>
             </div>
@@ -96,22 +93,20 @@ const editUrl = `${basePath}src/pages${pagePath}.mdx`;
             </div>
           </header>
           <nav class="site-nav py-5 md:py-0 px-8 hidden md:block">
-            <Navigation navigation={navigation} />
-
             {
               CONFIG.SIDEBAR && (
                 <div class="mt-8">
-                  <h3 class="font-bold text-lg">More</h3>
                   <ul class="mt-0">
                     {CONFIG.SIDEBAR.map((item) => (
-                      <li class="mb-2">
-                        <a
-                          class="text-gray-600 dark:text-gray-400"
-                          href={item.url}
-                        >
-                          {item.title}
-                        </a>
-                      </li>
+                      <Fragment>
+                        <li class="py-1">
+                          <span class="flex justify-between">
+                            <a class="text-base font-bold" href={item.url}>
+                              {item.title}
+                            </a>
+                          </span>
+                        </li>
+                      </Fragment>
                     ))}
                   </ul>
                 </div>
@@ -127,7 +122,7 @@ const editUrl = `${basePath}src/pages${pagePath}.mdx`;
               <div class="flex border-b border-color gap-x-8 h-20">
                 <div class="flex-1 px-8 my-auto">
                   <div class="max-w-xl lg:absolute top-4 w-full">
-                    <SearchField />
+                    
                   </div>
                 </div>
 
@@ -139,7 +134,7 @@ const editUrl = `${basePath}src/pages${pagePath}.mdx`;
 
             <article class="px-8 lg:px-11 py-8">
               <header class="max-w-2xl">
-                <h1 class="text-6xl font-black mb-2">{title}</h1>
+                <h1 class="text-5xl font-black mb-2">{title}</h1>
                 <p class="text-2xl text-grey-dk-000 mb-8">
                   {metaDescription}
                 </p>
@@ -161,35 +156,6 @@ const editUrl = `${basePath}src/pages${pagePath}.mdx`;
                 </div>
               </div>
             </article>
-
-            {
-              editUrl && (
-                <div class="px-8">
-                  <small>
-                    <a
-                      class="text-small text-primary font-black flex hover:underline"
-                      href={editUrl}
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="w-4 h-4 mr-1 my-auto"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125"
-                        />
-                      </svg>
-                      <span>Edit this page on GitHub</span>
-                    </a>
-                  </small>
-                </div>
-              )
-            }
           </main>
 
           <footer class="text-sm px-8 py-8 text-gray-400 border-t border-color">
@@ -207,7 +173,11 @@ const editUrl = `${basePath}src/pages${pagePath}.mdx`;
                 >MIT license</a
               >.
             </p>
+            
           </footer>
+          <br></br>
+          <br></br>
+          <Footer/>
         </div>
       </div>
     </div>

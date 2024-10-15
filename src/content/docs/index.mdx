@@ -1,38 +1,18 @@
 ---
 title: NA Ultimate Strats
-description: Home
+description: Homepage
+layout: '@/layouts/Layout.astro'
 ---
 
-import Footer from "../../components/Footer.astro";
 
-<link
-  rel="stylesheet"
-  media="(prefers-color-scheme:dark)"
-  href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/dark.css"
-  onload="document.documentElement.classList.add('sl-theme-dark');"
-/>
-<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js"></script>
+
 <html class="sl-theme-dark">
     <body>
     <div  class="index-content">
-    <sl-card style="display:flex;justify-content:center" class="card-basic">
-        <p>This website was created to be an easy to access library of all the current ultimate raid strats done in the NA FFXIV Community.</p>
-    </sl-card>
-        <h2 style="display:flex;justify-content:center">Ultimates</h2>
-        <div style="display:flex;justify-content:center" class="multi-button">
-            <div>
-                <button onclick="location.href='/guides/ucob'">UCOB</button>
-                <button onclick="location.href='/guides/uwu'">UWU</button>
-                <button onclick="location.href='/guides/tea'">TEA</button>
-                <button onclick="location.href='/guides/dsr'">DSR</button>
-                <button onclick="location.href='/guides/top'">TOP</button>
-            </div>
-        </div>
-        <br></br>
-        <sl-card style="display:flex;justify-content:center" class="card-basic">
+        <Card title="This website">
+        This website was created to be an easy to access library of all the current ultimate raid strats done in the NA FFXIV Community.
         <h6>All the strats found here are what people currently do in Party Finder on the NA Datacenters. Unless specified otherwise (Ex: Challenge Strats) these are the same as pug strats.</h6>
-        </sl-card>
+        </Card>
     </div>
-    <Footer/>
     </body>
  </html>

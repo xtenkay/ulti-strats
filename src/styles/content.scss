@@ -18,6 +18,10 @@
     @apply text-primary underline;
   }
 
+  a:not(.btn):hover {
+    @apply opacity-50;
+  }
+
 
   ol,
   ul,

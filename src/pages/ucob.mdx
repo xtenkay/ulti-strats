@@ -1,24 +1,14 @@
 ---
+layout: '@/layouts/Layout.astro'
 title: The Unending Coil of Bahamut
 description: UCOB Strats
 ---
-import { Aside } from '@astrojs/starlight/components';
-import { Icon } from '@astrojs/starlight/components';
-import Footer from '../../../components/Footer.astro';
 import { Image } from 'astro:assets';
-
-<link
-  rel="stylesheet"
-  media="(prefers-color-scheme:dark)"
-  href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/dark.css"
-  onload="document.documentElement.classList.add('sl-theme-dark');"
-/>
-<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js"></script>
-
+import Notification from '@/components/mdx/Notification.astro'
+import Card from '@/components/mdx/Card.astro'
 
 <Image alt="Bahamut" width="400" height="400" loading="eager" class="ulti-tooltip" src="/ucob.png"/>
-<sl-card class="card-basic ulti-summary">
-### Summary ###
+<Card title="Summary">
 - [**Twintania**](#twintania): Triangle CCW (N, SW, SE)
 - [**Nael**](#nael): Divebombs A>B>C
 - [**Quickmarch**](#bahamut): Safer QM, DPS Stack SW, DPS Shaker SE, Healers NW/NE
@@ -29,7 +19,8 @@ import { Image } from 'astro:assets';
 - [**Octet**](#bahamut): Tank LB3, Arms Length Twin Dive for safety (Dive goes left of Twin ideally)
 - [**Adds**](#adds): Bosses tanked between 1 and 3
 - [**Golden**](#golden-bahamut): Standard, Tank LB if not full 8 stack
-</sl-card>
+</Card>
+
 <h5>BiS Notes</h5>
 - Any gear at or above 470 will have their substats capped.
 - Relic weapons will have their substats capped at **127**.
@@ -38,39 +29,39 @@ import { Image } from 'astro:assets';
 <br></br>
 <hr></hr>
 
-### General Resources ###
-:::tip[Old Resources]
-    The following resources are either fairly old or using different strats, use them only as a base and dont take everything as gospel, please.
+## General Resources ##
+<Notification title="Old Resources">
+  The following resources are either fairly old or using different strats, use them only as a base and dont take everything as gospel, please.
     - <a href="https://clees.me/guides/ucob/" target="_blank">**Clees Guide**</a>
     - <a href="https://www.youtube.com/watch?v=EG9NxD6bxWs" target="_blank">**Tessan Visual Guide (New One)**</a>
-:::
+</Notification>
 - <a href="https://tinyurl.com/ucobmitty" target="_blank">**Recommended Mitigation Sheet**</a>
 - <a href="https://youtu.be/ZbrTfoIxRdE" target="_blank">**Exaflare Middle Dodge Tutorial**</a>
 
 <br></br>
 <hr></hr>
 
-### Twintania ###
+## Twintania ##
     - Neurolink placement - Normal triangle: N, SW, SE (CCW, on 123 markers)
     - <a href="https://raidplan.io/plan/9WEG4AEGVdru3hyF" target="_blank">**Raidplan**</a> <sl-badge variant="success">New!</sl-badge>
-    :::caution[Liquid Hell]
-        Phys. range always baits liquid hells, caster takes hatch if phys. range is first hatch<br></br>
+<Notification title="Liquid Hell Baiting">
+  Phys. range always baits liquid hells, caster takes hatch if phys. range is first hatch<br></br>
         Click <a href="https://youtu.be/9DDTla_pbL0" target="_blank">Here</a> for a video on how to do the baits properly!
-:::
+</Notification>
 <br></br>
 <hr></hr>
 
-### Nael ###
+## Nael ##
     - Party rotates CW around boss by default
     - <a href="https://raidplan.io/plan/DpoJr4oE_kGz_gRU" target="_blank">Nael Raidplan</a> <sl-badge variant="success">New!</sl-badge>
     - <a href="https://raidplan.io/plan/vi2rSC6mwW_d_QJF" target="_blank">Divebombs Raidplan</a> 
-:::danger[Fire Tether Order]
-        In > Out > In (2nd fire tether person out) > In
-:::
+<Notification title="Fire Tether Order">
+  In > Out > In (2nd fire tether person out) > In
+</Notification>
 <br></br>
 <hr></hr>
 
-### Bahamut ###
+## Bahamut ##
     <h5>Quickmarch</h5>
     - Uptime or normal QMT, depends on PF
     - <a href="https://raidplan.io/plan/3zSKK0DXeJgCLadx" target="_blank">**Uptime Quickmarch Raidplan**</a>
@@ -94,13 +85,13 @@ import { Image } from 'astro:assets';
     <h5>Grand Octet</h5>
     - Tank LB3
     - <a href="https://raidplan.io/plan/iunTUxGNwjAGF_7K" target="_blank">**Raidplan**</a>
-:::danger[No Tank LB3]
+    <Notification title="No Tank LB3">
     If no tank LB3 bait twin CCW (left) and stack CW of twin (right)
-:::
+    </Notification>
 <br></br>
 <hr></hr>
 
-### Adds ###
+## Adds ##
     - Discuss which boss you're taking (Default: MT Twin, OT Nael)
     - Bosses between 1/3 markers, somewhat NE
     - All stacks done in the **center** of the arena
@@ -109,7 +100,7 @@ import { Image } from 'astro:assets';
 <hr></hr>
 
 
-### Golden Bahamut ###
+## Golden Bahamut ##
     - <a href="https://raidplan.io/plan/Y4WRFLhdHSQ7oLN_" target="_blank">Golden Raidplan</a> <sl-badge variant="success">New!</sl-badge>
     - Akh Morn order - Share > MT invuln > OT invuln > Share
     - Shared busters are kitchen sinked with all available mits
@@ -117,17 +108,17 @@ import { Image } from 'astro:assets';
     - 60s/90s CD AoE mit - Either Morn Afahs 1/3/5 or 2/4
     - 2m CD AoE mit - Either Morn Afahs 1/4 or 2/5
     - NO tank LBs in default mit plan unless it's an emergency (e.g 7- person stack or invuln not up)
-:::caution[2nd Set]
+<Notification title="Second Set">
     The second set of mechanics in Golden(after the first Exas) swaps the order of the mechanics into Buster > Stack, make sure you dont put the buster on the party!<br></br>
     This swap is only for this set!
-:::
-:::tip[Mitigation Timing]
+</Notification>
+<Notification title="Mitigation Timing">
     Catching the 1/3/5 stacks with 90s (Addle/Feint) mit can be hard for newer players to the phase, make sure to communicate if you mess up the timing so that the party can adjust by Tank LB'ing or using extra mit!
-:::
+</Notification>
 <br></br>
 <hr></hr>
 
-### Videos ###
+## Videos ##
 <details>
 <summary>PoVs</summary>
 - <a href="https://www.twitch.tv/videos/2149278406" target="_blank">**WAR - MT - by Frey**</a>
@@ -148,7 +139,7 @@ import { Image } from 'astro:assets';
 <br></br>
 <hr></hr>
 
-### Markers ###
+## Markers ##
 <details>
 <summary>Presets</summary>
     - Modified Aether PF (Recommended)
@@ -167,7 +158,7 @@ import { Image } from 'astro:assets';
 <br></br>
 <hr></hr>
 
-### Marker Usage ###
+## Marker Usage ##
 The following assumes the use of the **Modified Aether PF** markers.
 
 <code>123</code> are used for Neurolink placement.
@@ -181,8 +172,6 @@ The following assumes the use of the **Modified Aether PF** markers.
 <br></br>
 <hr></hr>
 
-### Others ###
+## Others ##
 
     - <a href="https://imgur.com/a/FNTZDGV" target="_blank">**LB cheese cheatsheet**</a>
-
-<Footer/>

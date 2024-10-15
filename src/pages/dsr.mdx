@@ -1,25 +1,15 @@
 ---
+layout: '@/layouts/Layout.astro'
 title: Dragonsong's Reprise
 description: DSR Strats
 ---
-import { Aside } from '@astrojs/starlight/components';
-import { Icon } from '@astrojs/starlight/components';
 import { Image } from 'astro:assets';
-import Footer from '../../../components/Footer.astro';
+import Notification from '@/components/mdx/Notification.astro'
+import Card from '@/components/mdx/Card.astro'
 
-
-<link
-  rel="stylesheet"
-  media="(prefers-color-scheme:dark)"
-  href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/dark.css"
-  onload="document.documentElement.classList.add('sl-theme-dark');"
-/>
-<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js"></script>
 <body>
-<Image width="400" height="400" class="ulti-tooltip" loading="eager" alt="Dragonking Thordan" src="/dkt.webp"/>
-
-<sl-card class="card-basic ulti-summary">
-### Summary ###
+<Image width="400" height="400" loading="eager" alt="Dragonking Thordan" src="/dkt.webp"/>
+<Card title="Summary">
 - [**Vault Knights**](#vault-knights-door-boss): HMRT
 - [**Thordan**](#thordan): DRK Rel, Role adjust
 - [**Nidhogg**](#nidhogg): Westhogg
@@ -27,7 +17,8 @@ import Footer from '../../../components/Footer.astro';
 - [**Dark Thordan**](#dark-thordan): Party Right Wrath, Dooms North & Anchor
 - [**Double Dragons**](#double-dragons): Triangle WB1, DTTMC Vow, Static WB2
 - [**Dragonking Thordan**](#dragon-king-thordan): First Akh 3-3-2, Second and Third 6-1-1 (Party NW Tower)
-</sl-card>
+</Card>
+
 
 <h5>BiS Notes</h5>
 - Mix of i600 (Asphodelos) gear, and i605 gear from Lapis Manalis.
@@ -45,18 +36,16 @@ import Footer from '../../../components/Footer.astro';
     style="cursor:pointer;"
 />
 (Click for Full-size)
-<br></br>
 <hr></hr>
-### General Resources ###
+## General Resources ##
 - <a href="https://docs.google.com/spreadsheets/d/1sUEuFDGa_Qg4SYHo4y7b4oEvUGvmhkUMn2rPdXdWEo0/edit#gid=263338920" target="_blank">**DSR Mitty**</a>
-:::note[Tessan]
-This guide is not based NA strats but it is a very good visual guide for the mechanics so if you use it make sure you only use it as a base for learning and not for the actual strats! For example: Healer/Tank spreads during Strength lightning spreads are swapped in the Tessan Video Guide!!!.
 - <a href="https://www.youtube.com/watch?v=A-P1eXE18ko" target="_blank">**Tessan Guide**</a>
-:::
-<br></br>
+<Notification title="Tessan">
+  This guide is not based NA strats but it is a very good visual guide for the mechanics so if you use it make sure you only use it as a base for learning and not for the actual strats! For example: Healer/Tank spreads during Strength lightning spreads are swapped in the Tessan Video Guide!!!.
+</Notification>
 <hr></hr>
 
-### Vault Knights (Door Boss) ### 
+## Vault Knights (Door Boss) ## 
     - <a href="https://ff14.toolboxgaming.space/?id=802461081524561&preview=1" target="_blank">Toolbox</a>
     - Playstation Macro
 
@@ -67,36 +56,41 @@ This guide is not based NA strats but it is a very good visual guide for the mec
     D □   H X   H △
     ```
 </div>
+<hr></hr>
 
-### Thordan ### 
+## Thordan ## 
     - <a href="https://raidplan.io/plan/NDX-6bF2djrDMB-v" target="_blank">Start + Strength of the Ward</a>
      - <a href="https://raidplan.io/plan/2CYKJu6IHzBdolZu"target="_blank">Sanctity of the Ward - Drk Relative Dodges</a>
       - <a href="https://raidplan.io/plan/Src8CpFxCAUUuZEM" target="_blank">Sanctity of the Ward pt. 2 - Meteors</a>
 
-### Nidhogg ### 
+<hr></hr>
+## Nidhogg ## 
     - Westhogg
     - <a href="https://ff14.toolboxgaming.space/?id=442165647202561&preview=1" target="_blank">Toolbox</a>
 
-### Eyes ### 
+<hr></hr>
+## Eyes ## 
     - <a href="https://ff14.toolboxgaming.space/?id=613699253336171&preview=1" target="_blank">Toolbox</a>
 
-### Intermission ### 
+<hr></hr>
+## Intermission ## 
     - <a href="https://ff14.toolboxgaming.space/?id=999851866521561&preview=1" target="_blank">Toolbox</a>
-:::caution[Tank LB]
+<Notification title="Tank LB">
     Make sure you talk to the other tank about whos LB'ing, usually the prio for who does the LB is WAR > DRK > PLD > GNB
-:::
+</Notification>
 
-### Dark Thordan ### 
+<hr></hr>
+## Dark Thordan ## 
     - Party Right Wrath
     - <a href="https://ff14.toolboxgaming.space/?id=143466228734561&preview=1" target="_blank">Wrath</a>
     - Dooms North and Anchor DOTH
     - <a href="https://ff14.toolboxgaming.space/?id=655564591965561&preview=1" target="_blank">Doth</a>
-:::tip[DOTH Recovery]
+<Notification title="DOTH Recovery">
 - If you die before the knockback you can accept raise a little before it goes off (When the shapes show up on other players) so that you invuln the fire spreads. This is better than raising and not making it to your knockback spot and risking overlapping someone.
 
 - If a non doom player dies before the Playstation shapes appear the shape that is gonna be missing is always X (Relative North/South Knockbacks). Knowing this can help save a pull!
     - Basically, if you are non doom and dont have a shape get knocked North or South to not clip anyone! 
-:::
+</Notification>
 
     - Doth Quake Dodges
     
@@ -112,9 +106,8 @@ This guide is not based NA strats but it is a very good visual guide for the mec
     />
 (Click for Full-size)
 
-
-
-### Double Dragons ### 
+<hr></hr>
+## Double Dragons ##
     - <a href="https://ff14.toolboxgaming.space/?id=426762112878561&preview=1" target="_blank">Toolbox</a>
     - Triangle WB1
     - Static WB2
@@ -130,39 +123,39 @@ This guide is not based NA strats but it is a very good visual guide for the mec
         style="cursor:pointer;"
         />
 
-:::note[Post DOTH without Invuln]
+<Notification title="Post DOTH without invuln">
 - You can use your 30% Mit+Short+Rep for the Buster after DOTH and then just live WB1 with both short mits.
 - This makes it so you dont have to rely on needing extra mit to survive the Heel/Cleaves (otherwise you need Reprisal + Feint and one extra mit aside from your normal CDs).
 - If you dont trust your co-tank to mit you in Wyrmsbreath 1 you can use your third CD (the one you use in Hallowed 2) on the Wyrmsbreath Buster and you'll live and have it back for Hallowed 2.
-:::
+</Notification>
 
-:::danger[Niddhog's Vow]
+<Notification title="Niddhog's Vow" type="primary">
 - Melees with defensives should prio vow, just because you are flexing doesnt mean you also cant take the vow, this makes healers life easier and makes it so you dont wipe 15m into the fight because of a DRG exploding!
     - MNK/NIN > SAM/RPR > DRG prio is ideal
-:::
+</Notification>
 
-:::caution[Cauterize]
+<Notification title="Cauterize" type="secondary">
 The pyretic in Cauterize snapshots VERY early, make sure you hit escape (circle on controller) TWICE. If you still have the boss targetted it can proc the pyretic even if you dont press an action. If you do get ticked by Cauterize just move again so that you die and dont make Hraes enrage
 
 If Hrae enrages you can use Tank LB2 (You should have it assuming you used LB2 in DOTH) to live the enraged Touchdown with full health + shields.
-:::
+</Notification>
 
-### Dragon-king Thordan ###
+<hr></hr>
+## Dragon-king Thordan ##
 
     - <a href="https://ff14.toolboxgaming.space/?id=448767858029561&preview=1" target="_blank">Toolbox</a>
 
-:::tip[DKT Mitigation]
-- Make sure to wait until the **SECOND** bleed falls off in Dragon-king transition before you use shields, this includes things like Veil/Shake.
-    - (Theres one from Estinien and one when Thordan drops down and does his roleplay)
+<Notification title="DKT Mitigation">
+- Make sure to wait until the **SECOND** bleed falls off in Dragon-king transition before you use shields, this includes things like Veil/Shake. (Theres one from Estinien and one when Thordan drops down and does his roleplay)
 - Mitigation for DKT doesnt snapshot on the cast for all the hits, if you can, make sure to use it around 70-80% of the castbar so it catches all the hits! This only applies to 10s cooldowns.
 - Kerachole **NEEDS** to be used after second trinity to be up for Gigaflare! 
 - Soil **NEEDS** to be used after the first trinity to be up for Gigaflare (Soil lasts slightly longer than Kera due to lingering)
-:::
+</Notification>
 
 <br></br>
 <hr></hr>
 
-### Videos ###
+## Videos ##
 <details>
 <summary>PoVs</summary>
 - <a href="https://www.twitch.tv/videos/2154690801" target="_blank">**WAR - MT - by Solara**</a>
@@ -176,7 +169,7 @@ If Hrae enrages you can use Tank LB2 (You should have it assuming you used LB2 i
 <br></br>
 <hr></hr>
 
-### Markers ###
+## Markers ##
 
 <details>
 <summary>Click to show marker presets</summary>
@@ -224,10 +217,9 @@ If Hrae enrages you can use Tank LB2 (You should have it assuming you used LB2 i
 <br></br>
 <hr></hr>
 
-### Challenge Strats (Not for prog or PF) ###
+## Challenge Strats (Not for prog or PF) ##
 <details>
 <summary>Wholehogg</summary>
 <iframe title="Wholehogg" loading="lazy" class="excalidraw" src="https://link.excalidraw.com/p/readonly/hlyKQ34t3yAJXlmR574R?darkMode=true" width="100%" min-height="5000px" style="border: none;"></iframe>
 </details>
-<Footer/>
 </body>

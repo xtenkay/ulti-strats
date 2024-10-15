@@ -14,10 +14,10 @@ const { navigation } = Astro.props;
 ---
 
 <ul>
-  <li>
-    <a class="text-base font-bold" href="/">Home</a>
-  </li>
+  
   {
+    // Disabled because i could not find a way to change the sorting order
+    
     navigation.map((item, index) => (
       <Fragment>
         <li class="py-1">

@@ -1,10 +1,9 @@
 export const SITE = {
-  title: "Astro Just Docs",
-  description: "A powerful MDX based authoring framework for building great documentation.",
+  title: "Ulti Strats",
+  description: "Ultimate Strats from NA Datacenter",
   defaultLanguage: "en_US",
-  twitter: "@underlost",
-  github: "underlost",
-  linkedin: "underlost",
+  twitter: "@tenkayshijou",
+  github: "xtenkay",
 };
 
 export const GITHUB = {
@@ -17,9 +16,13 @@ export const OPEN_GRAPH = {
     src: "",
     alt: "",
   },
-  twitter: "",
+  twitter: "tenkayshijou",
 };
 
 export const SIDEBAR = [
-  { title: "underlost.net", url: "https://underlost.net" },
+  { title: "Ultimate Coil of Bahamut", url: "/ucob" },
+  { title: "Ultima Weapon's Refrain", url: "/uwu" },
+  { title: "The Epic of Alexander", url: "/tea" },
+  { title: "Dragonsong's Reprise", url: "/dsr" },
+  { title: "The Omega Protocol", url: "/top" },
 ];

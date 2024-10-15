@@ -1,23 +1,16 @@
 ---
+layout: '@/layouts/Layout.astro'
 title: The Epic of Alexander
 description: TEA Strats
+sidebar:
+    order: 2
 ---
-import { Aside } from '@astrojs/starlight/components';
-import { Icon } from '@astrojs/starlight/components';
-import Footer from '../../../components/Footer.astro';
 import { Image } from 'astro:assets';
-
-<link
-  rel="stylesheet"
-  media="(prefers-color-scheme:dark)"
-  href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/dark.css"
-  onload="document.documentElement.classList.add('sl-theme-dark');"
-/>
-<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js"></script>
+import Card from '@/components/mdx/Card.astro'
 
 <Image alt="Perfect Alexander" loading="eager" width="400" height="400" class="ulti-tooltip" src="/tea.png"/>
-<sl-card class="card-basic ulti-summary">
-### Summary ###
+<br></br>
+<Card title="Summary">
 - [**Living Liquid**](#living-liquid): Stacked
 - [**Limit Cut**](#limit-cut): 1256 W to NE
 - [**BJ/CC**](#bjcc): Split Stack
@@ -25,7 +18,8 @@ import { Image } from 'astro:assets';
 - [**Inception**](#alex-prime): Box Strat, MT Far, OT Mid
 - [**Wormhole**](#alex-prime): Alex is North, Evens Left, Odds Right
 - [**Perfect Alexander**](#perfect-alexander): N/S Final Word, Lightning Right
-</sl-card>
+</Card>
+
 <h5>BiS Notes</h5>
 - Any gear at or above i595 will have their substats capped.
 - Relic weapons will have their substats capped at **184**.
@@ -52,7 +46,7 @@ import { Image } from 'astro:assets';
 </details>
 
 <hr></hr>
-### General Resources ###
+## General Resources ##
 - <a href="https://pastebin.com/uxVnJm7R" target="_blank">**Pastebin**</a>
 - <a href="https://www.youtube.com/watch?v=uVtZ8-XoOZ0" target="_blank">**Tessan Guide**</a>
 :::note[Tessan Guide Strats]
@@ -64,17 +58,17 @@ This guide is almost the same as NA strats, the only difference being Inception,
 <br></br>
 <hr></hr>
 
-### Living Liquid
+## Living Liquid
 - <a href="https://ff14.toolboxgaming.space/?id=725383877116761&preview=1" target="_blank">**Toolbox**</a>
 
-### Limit Cut ###
+## Limit Cut ##
 - 1256 Limit Cut
 - <a href="https://ff14.toolboxgaming.space/?id=803293127441961&preview=1" target="_blank">**Toolbox**</a>
 :::danger[Limit Cut]
 If the blasts hit direct E/W for the first set that means group 1 goes **WEST**.
 :::
 
-### BJCC ###
+## BJCC ##
 - Split BJ/CC
 - <a href="https://ff14.toolboxgaming.space/?id=492297437831961&preview=1" target="_blank">**Toolbox**</a>
 :::note[Burst]
@@ -84,7 +78,7 @@ At the start of the phase please do the majority of your burst on Cruise Chaser,
 Mitigation used directly on Brute affects the Water/Lightning and even the mines, this means that things like Addle/Feint/Rep will reduce the damage you take from them. Please use your mit!
 :::
 
-### Alex Prime ###
+## Alex Prime ##
 - Christmas Right Time Stop
 - <a href="https://ff14.toolboxgaming.space/?id=860745463802461&preview=1" target="_blank">**Timestop / Inception**</a>
 :::note[Time Stop]
@@ -130,7 +124,7 @@ If you are 1 or 2 during Wormhole stay still a bit after your cleave/dash resolv
 A good rule of thumb is to move back to the cardinal when the first puddle soak happens.
 :::
 
-### Perfect Alexander ###
+## Perfect Alexander ##
 - <a href="https://ff14.toolboxgaming.space/?id=170875560147661&preview=1" target="_blank">**Toolbox**</a>
 :::tip[Final Word]
 Sprint does not affect the forced march, feel free to use it to make it to your spot faster!
@@ -176,7 +170,7 @@ If you are one of the Dark Debuff players make sure to go towards the wall to ba
 <br></br>
 <hr></hr>
 
-### Videos ###
+## Videos ##
 <details>
 <summary>PoVs</summary>
 - <a href="https://www.youtube.com/watch?v=MqZm9fJoN3g" target="_blank">**DRK - OT - by Dank Tank**</a>
@@ -187,7 +181,7 @@ If you are one of the Dark Debuff players make sure to go towards the wall to ba
 <br></br>
 <hr></hr>
 
-### Markers ###
+## Markers ##
 
 <details>
 <summary>Presets</summary>
@@ -208,7 +202,7 @@ If you are one of the Dark Debuff players make sure to go towards the wall to ba
 <br></br>
 <hr></hr>
 
-### Marker Usage ###
+## Marker Usage ##
 
 <code>143</code> are used for Trines during Perfect Alexander.
 
@@ -224,14 +218,14 @@ If you are one of the Dark Debuff players make sure to go towards the wall to ba
 
 <br></br>
 <hr></hr>
-### Frequently Asked Questions ###
+## Frequently Asked Questions ##
 
 - <h6>I didnt press anything during Stillness and still died?</h6>
 - You need to fully detarget the boss for Stillness, if you only stop pressing your GCDs you risk auto attacking the boss and triggering the mechanic, this means you should press Escape (Or Circle on PS controller) TWICE not once!
 
 <br></br>
 <hr></hr>
-### Others ###
+## Others ##
 
 <details>
 <summary>Primal Wormhole Macro</summary>
@@ -257,7 +251,5 @@ If you are one of the Dark Debuff players make sure to go towards the wall to ba
 <br></br>
 <hr></hr>
 
-### Challenge Strats (Not for prog or PF) ###
+## Challenge Strats (Not for prog or PF) ##
 - [Strat 5](https://ff14.toolboxgaming.space/?id=599731067479261&preview=1)
-
-<Footer/>

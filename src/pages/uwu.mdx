@@ -1,33 +1,21 @@
 ---
+layout: '@/layouts/Layout.astro'
 title: The Weapon's Refrain
 description: UWU Strats
 ---
-import { Aside } from '@astrojs/starlight/components';
-import { Icon } from '@astrojs/starlight/components';
-import Footer from '../../../components/Footer.astro';
 import { Image } from 'astro:assets';
-
-<link
-  rel="stylesheet"
-  media="(prefers-color-scheme:dark)"
-  href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/dark.css"
-  onload="document.documentElement.classList.add('sl-theme-dark');"
-/>
-<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js"></script>
-
-:::danger[UNDER CONSTRUCTION]
-UWU has a lot of very old resources that are really not up to par with current ones for more recent fights. Some friends that do a lot of UWU are in the process of making new resources for the fight so once they are done i'll update this page with the new stuff
-:::
+import Notification from '@/components/mdx/Notification.astro'
+import Card from '@/components/mdx/Card.astro'
 
 <Image height="400" width="400" alt="Ultima" loading="eager" class="ulti-tooltip" src="/uwu.webp"/>
-<sl-card class="card-basic ulti-summary">
-### Summary ###
+<Card title="Summary">
 - [**Garuda**](#garuda): Centeruda
 - [**Ifrit**](#ifrit): Z Nails, Skip Dashes
 - [**Titan**](#titan): AM Gaols
 - [**Transition**](#transition): LB Cheese first Tank Purge
 - [**Ultima**](#ultima): 2222/2211 Annihilation, Party SE>NE Booms Tanks SW>NW
-</sl-card>
+</Card>
+
 <h5>BiS Notes</h5>
 - Any gear at or above i500 will have their substats capped.
 - Relic weapons will have their substats capped at **136**.
@@ -43,7 +31,7 @@ UWU has a lot of very old resources that are really not up to par with current o
 <br></br>
 <hr></hr>
 
-### General Resources ###
+## General Resources ##
 - <a href="https://pastebin.com/hTvkZG3x" target="_blank">**Pastebin**</a>
 - <a href="https://docs.google.com/spreadsheets/d/13dpeUEBHFpLxX38gjC8oh1xEB4F7xBECI9BvycJEsfk/edit#gid=831820397)" target="_blank">**Tank Mit**</a>
 - <a href="https://www.youtube.com/watch?v=d08-CA5zS1c" target="_blank">**Predation Video Guide**</a>
@@ -52,15 +40,15 @@ UWU has a lot of very old resources that are really not up to par with current o
 <br></br>
 <hr></hr>
 
-### Garuda ###
+## Garuda ##
 - Centeruda
 - <a href="https://ff14.toolboxgaming.space/?id=584766219158561&preview=1" target="_blank">**Toolbox**</a>
 
-### Ifrit ### 
+## Ifrit ## 
 - Z-Nails, Skip Dashes
 - <a href="https://ff14.toolboxgaming.space/?id=110045202472361&preview=1" target="_blank">**Toolbox**</a>
 
-### Titan ###
+## Titan ##
 - 1-2-3 Gaols, 1 Closest to Titan
 - <a href="https://ff14.toolboxgaming.space/?id=210044492472361&preview=1" target="_blank">**Toolbox**</a>
 - Gaol Positioning
@@ -77,11 +65,11 @@ UWU has a lot of very old resources that are really not up to par with current o
 />
 (Click for Full-size)
 
-### Transition ###
+## Transition ##
 - LB Cheese first tank purge
 - <a href="https://ff14.toolboxgaming.space/?id=430631425646261&preview=1" target="_blank">**Limit Breaks + LB Cheese**</a>
 
-### Ultima ###
+## Ultima ##
 - OT > MT > OT  Homing Order 
 - 2211 / 2222 Orbs (melee don't have to eat this since shb)
 - Standard : Party SE > NE for booms / Tanks SW > NW
@@ -92,7 +80,7 @@ UWU has a lot of very old resources that are really not up to par with current o
 <br></br>
 <hr></hr>
 
-### Videos ###
+## Videos ##
 <details>
 <summary>Videos</summary>
 - <a href="https://www.youtube.com/watch?v=tbBEUF3ffeI" target="_blank">DRK - MT</a>
@@ -102,7 +90,7 @@ UWU has a lot of very old resources that are really not up to par with current o
 <br></br>
 <hr></hr>
 
-### Markers ###
+## Markers ##
 <details>
 <summary>Presets</summary>
 - Standard
@@ -112,13 +100,12 @@ UWU has a lot of very old resources that are really not up to par with current o
 </details>
 <br></br>
 <hr></hr>
-### Tips ###
-<div class="light-pillar-tip">
-:::tip[Supression Light Pillar]
-If you are baiting the Light Pillar with the Mistrals (Green Cleaves) make sure to wait until the Garuda green AoE goes off before you walk into it or you will die and the pillar will go on a random party member.
-:::
-</div>
-:::tip[LB Cheese Transition]
+## Tips ##
+<Notification title="Supression Light Pillar">
+  If you are baiting the Light Pillar with the Mistrals (Green Cleaves) make sure to wait until the Garuda green AoE goes off before you walk into it or you will die and the pillar will go on a random party member.
+</Notification>
+
+<Notification type="primary" title="LB Cheese Transition">
 SGE: 
 1) After melee LB, eukprog + kerachole
 2) After Garuda gets chomped, Zoe EukProg
@@ -138,7 +125,4 @@ PLD:
 
 GNB:
 1) Hit Heart of Light when screen goes white after Garuda crunch
-:::
-
-
-<Footer/>
+</Notification>
