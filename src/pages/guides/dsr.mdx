@@ -7,6 +7,9 @@ nav_order: 4
 import { Image } from 'astro:assets';
 import Notification from '@/components/mdx/Notification.astro'
 import Card from '@/components/mdx/Card.astro'
+import Cheatsheet from '../../../public/dsrcheatsheet.png'
+import DothQuakesImage from '../../../public/DOTHQuakeDodges.png'
+import WB2Naur from '../../../public/fixed_wyrmsbreath2_naur.png'
 
 <body>
 <Image width="400" height="400" loading="eager" alt="Dragonking Thordan" src="/dkt.webp"/>
@@ -26,9 +29,7 @@ import Card from '@/components/mdx/Card.astro'
 
 <h5>Cheatsheet</h5>
 <Image
-    src="/dsrcheatsheet.png"
-    width="400"
-    height="300"
+    src={Cheatsheet}
     decoding="async"
     loading="eager"
     alt="DSR Cheatsheet"
@@ -67,8 +68,8 @@ import Card from '@/components/mdx/Card.astro'
 
 <hr></hr>
 ## Nidhogg ## 
-    - Westhogg
     - <a href="https://ff14.toolboxgaming.space/?id=442165647202561&preview=1" target="_blank">Toolbox</a>
+    - Westhogg
 
 <hr></hr>
 ## Eyes ## 
@@ -82,11 +83,11 @@ import Card from '@/components/mdx/Card.astro'
 </Notification>
 
 <hr></hr>
-## Dark Thordan ## 
+## Thordan II ## 
     - Party Right Wrath
-    - <a href="https://ff14.toolboxgaming.space/?id=143466228734561&preview=1" target="_blank">Wrath</a>
+    - <a href="https://ff14.toolboxgaming.space/?id=143466228734561&preview=1" target="_blank">Wrath Toolbox</a>
     - Dooms North and Anchor DOTH
-    - <a href="https://ff14.toolboxgaming.space/?id=655564591965561&preview=1" target="_blank">Doth</a>
+    - <a href="https://ff14.toolboxgaming.space/?id=655564591965561&preview=1" target="_blank">Doth Toolbox</a>
 <Notification title="DOTH Recovery">
 - If you die before the knockback you can accept raise a little before it goes off (When the shapes show up on other players) so that you invuln the fire spreads. This is better than raising and not making it to your knockback spot and risking overlapping someone.
 
@@ -96,16 +97,14 @@ import Card from '@/components/mdx/Card.astro'
     - Doth Quake Dodges
 
     <Image
-    src="/DOTHQuakeDodges.png"
-    width="400"
-    height="300"
+    src={DothQuakesImage}
+    inferSize
     decoding="async"
     loading="eager"
     alt="TOP Cheatsheet"
     onclick="window.open('/DOTHQuakeDodges.png','_blank')"
     style="cursor:pointer;"
     />
-(Click for Full-size)
 
 <hr></hr>
 ## Double Dragons ##
@@ -114,9 +113,7 @@ import Card from '@/components/mdx/Card.astro'
     - Static WB2
     - **Wyrmsbreath 2 Positions**
     <Image
-        src="/fixed_wyrmsbreath2_naur.png"
-        width="400"
-        height="300"
+        src={WB2Naur}
         decoding="async"
         loading="lazy"
         alt="Wb2 Spots"
@@ -156,16 +153,29 @@ If Hrae enrages you can use Tank LB2 (You should have it assuming you used LB2 i
 <hr></hr>
 
 ## Videos ##
-<details>
-<summary>PoVs</summary>
-- <a href="https://www.twitch.tv/videos/2154690801" target="_blank">**WAR - MT - by Solara**</a>
-- <a href="https://www.twitch.tv/videos/2154688818" target="_blank">**PLD - MT - by Solara**</a>
-- <a href="https://www.youtube.com/watch?v=zZ1z0_oPpYA" target="_blank">**DRK - OT - by Dank Tank**</a>
-- <a href="https://www.twitch.tv/videos/2150374154" target="_blank">**AST - G1 - by Wubz**</a>
-- <a href="https://www.youtube.com/watch?v=_4bcg7uqvJA&feature=youtu.be" target="_blank">**SCH - G2 - by Yeul**</a>
-- <a href="https://www.twitch.tv/videos/2150363185" target="_blank">**RDM - G2 - by Wubz**</a>
+<h2>Tanks</h2>
+- <a href="https://www.twitch.tv/videos/2154690801" target="_blank">**WAR - MT**</a>
+- <a href="https://www.twitch.tv/videos/2154688818" target="_blank">**PLD - MT**</a>
+- <a href="https://www.youtube.com/watch?v=zZ1z0_oPpYA" target="_blank">**DRK - OT**</a>
+- <a href="https://www.twitch.tv/videos/2166633612" target="_blank">**GNB - OT**</a>
 
-</details>
+<h2>Healers</h2>
+- <a href="https://www.twitch.tv/videos/1885855482" target="_blank">**WHM - H1**</a>
+- <a href="https://www.twitch.tv/videos/2150374154" target="_blank">**AST - H1**</a>
+- <a href="https://www.youtube.com/watch?v=_4bcg7uqvJA&feature=youtu.be" target="_blank">**SCH - H2**</a>
+- <a href="https://www.twitch.tv/videos/2177826051" target="_blank">**SGE - H2**</a>
+
+<h2>DPS</h2>
+- <a href="https://www.youtube.com/watch?v=4_gMRbzCGzw" target="_blank">**SAM - M1**</a>
+- <a href="https://www.youtube.com/watch?v=7MmGdQiRkv8" target="_blank">**MNK - M1**</a>
+- <a href="https://www.youtube.com/watch?v=W779xZxFmmU" target="_blank">**NIN - M1**</a>
+- <a href="https://www.twitch.tv/videos/2167957260" target="_blank">**DRG - M2**</a>
+- <a href="https://www.youtube.com/watch?v=tCIw8Gq3Cq4" target="_blank">**BRD - R1**</a>
+- <a href="https://www.youtube.com/watch?v=GbjfNPtPzBg" target="_blank">**DNC - R1**</a>
+- <a href="https://www.youtube.com/watch?v=OiXDn8N-Qq0" target="_blank">**MCH - R1**</a>
+- <a href="https://www.twitch.tv/videos/2150363185" target="_blank">**RDM - R2**</a>
+- <a href="https://www.twitch.tv/videos/2157013665" target="_blank">**BLM - R2**</a>
+
 <br></br>
 <hr></hr>
 

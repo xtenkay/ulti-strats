@@ -1,19 +1,57 @@
+@use "./layout.scss";
+
+@use "./search.scss";
+@use "./typography.scss";
+@use "./content.scss";
+@use "./table.scss";
+@use "./code.scss";
+
+@use "./components/button.scss";
+@use "./components/label.scss";
+@use "./components/notification.scss";
+@use "./components/endpoint.scss";
+@use "./components/card.scss";
+@use "./components/grid.scss";
+@use "./components/banner.scss";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import "./layout.scss";
+h1,
+.h1{
+  @apply text-4xl font-black leading-relaxed;
+}
 
-@import "./search.scss";
-@import "./typography.scss";
-@import "./content.scss";
-@import "./table.scss";
-@import "./code.scss";
+h2,
+.h2 {
+  @apply text-3xl font-black;
+}
 
-@import "./components/button.scss";
-@import "./components/label.scss";
-@import "./components/notification.scss";
-@import "./components/endpoint.scss";
-@import "./components/card.scss";
-@import "./components/grid.scss";
-@import "./components/banner.scss";
+h3,
+.h3 {
+  @apply text-2xl font-black;
+}
+
+h4,
+.h4 {
+  @apply text-xl font-black leading-relaxed uppercase;
+}
+
+h4 code {
+  text-transform: none;
+}
+
+h5,
+.h5 {
+  @apply text-lg font-black uppercase;
+}
+
+h6,
+.h6 {
+  @apply text-base font-black uppercase;
+}
+
+.text-small {
+  @apply text-sm;
+}

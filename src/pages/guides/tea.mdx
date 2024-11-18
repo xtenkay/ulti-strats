@@ -7,6 +7,8 @@ nav_order: 3
 import { Image } from 'astro:assets';
 import Card from '@/components/mdx/Card.astro'
 import Notification from '@/components/mdx/Notification.astro'
+import Cheatsheet from '../../../public/tea_cheatsheet.png'
+import CrystalsInception from '../../../public/crystals.png'
 
 <Image alt="Perfect Alexander" loading="eager" width="400" height="400" class="ulti-tooltip" src="/tea.png"/>
 <br></br>
@@ -27,29 +29,27 @@ import Notification from '@/components/mdx/Notification.astro'
 
 <h5>Cheatsheet</h5>
 <Image
-    src="/tea_cheatsheet.png"
-    width="400"
-    height="300"
+    src={Cheatsheet}
     decoding="async"
     loading="eager"
     alt="TOP Cheatsheet"
     onclick="window.open('/tea_cheatsheet.png','_blank')"
     style="cursor:pointer;"
 />
-(Click for Full-size)
 
 <hr></hr>
 ## General Resources ##
 - <a href="https://pastebin.com/uxVnJm7R" target="_blank">**Pastebin**</a>
 - <a href="https://www.youtube.com/watch?v=uVtZ8-XoOZ0" target="_blank">**Tessan Guide**</a>
-This guide is almost the same as NA strats, the only difference being Inception, where in NA shared sentence goes relative west, and the party goes relative east.
 - <a href="https://docs.google.com/spreadsheets/d/1qXUASl8N-AHe_zsc0AWMcg61Pkc-8WJSEKF461dJjG8/edit?gid=1511755464#gid=1511755464" target="_blank">**General Mit**</a>
-
+<Notification title="Tessan">
+  This guide is not based on NA strats but it is a very good visual guide for the mechanics.
+</Notification>
 <br></br>
 <hr></hr>
-
-## Living Liquid
+## P1: Living Liquid
 - <a href="https://ff14.toolboxgaming.space/?id=725383877116761&preview=1" target="_blank">**Toolbox**</a>
+<hr></hr>
 
 ## Limit Cut ##
 - 1256 Limit Cut
@@ -57,8 +57,9 @@ This guide is almost the same as NA strats, the only difference being Inception,
 <Notification title="Limit Cut">
 If the blasts hit direct E/W for the first set that means group 1 goes **WEST**.
 </Notification>
+<hr></hr>
 
-## BJCC ##
+## P2: BJCC ##
 - Split BJ/CC
 - <a href="https://ff14.toolboxgaming.space/?id=492297437831961&preview=1" target="_blank">**Toolbox**</a>
 <Notification title="Burst">
@@ -67,8 +68,9 @@ At the start of the phase please do the majority of your burst on Cruise Chaser,
 <Notification title="Mitigation">
 Mitigation used directly on Brute affects the Water/Lightning and even the mines, this means that things like Addle/Feint/Rep will reduce the damage you take from them. Please use your mit!
 </Notification>
+<hr></hr>
 
-## Alex Prime ##
+## P3: Alex Prime ##
 - Christmas Right Time Stop
 - <a href="https://ff14.toolboxgaming.space/?id=860745463802461&preview=1" target="_blank">**Timestop / Inception**</a>
 <Notification title="Time Stop">
@@ -76,9 +78,7 @@ The blue tether is yolo'd in PF, make sure you check if you are on the Cruise si
 </Notification>
 - **Inception Crystal Positioning**
 <Image
-        src="/crystals.png"
-        width="400"
-        height="300"
+        src={CrystalsInception}
         decoding="async"
         loading="lazy"
         alt="Crystal Spots"
@@ -113,8 +113,9 @@ If you are 1 or 2 during Wormhole stay still a bit after your cleave/dash resolv
 
 A good rule of thumb is to move back to the cardinal when the first puddle soak happens.
 </Notification>
+<hr></hr>
 
-## Perfect Alexander ##
+## P4: Perfect Alexander ##
 - <a href="https://ff14.toolboxgaming.space/?id=170875560147661&preview=1" target="_blank">**Toolbox**</a>
 <Notification title="Final Word">
 Sprint does not affect the forced march, feel free to use it to make it to your spot faster!
@@ -162,13 +163,9 @@ If you are one of the Dark Debuff players make sure to go towards the wall to ba
 <hr></hr>
 
 ## Videos ##
-<details>
-<summary>PoVs</summary>
-- <a href="https://www.youtube.com/watch?v=MqZm9fJoN3g" target="_blank">**DRK - OT - by Dank Tank**</a>
-- <a href="https://youtu.be/DCWOrt1FGoQ?si=XOYLtEgSIFQ7UX39&t=26" target="_blank">**DNC - by M. π**</a>
-- <a href="https://www.youtube.com/watch?v=VuSEDC1Yin8" target="_blank">**DNC - by M. π**</a>
-
-</details>
+- <a href="https://www.youtube.com/watch?v=MqZm9fJoN3g" target="_blank">**DRK - OT**</a>
+- <a href="https://youtu.be/DCWOrt1FGoQ?si=XOYLtEgSIFQ7UX39&t=26" target="_blank">**DNC**</a>
+- <a href="https://www.youtube.com/watch?v=VuSEDC1Yin8" target="_blank">**DNC**</a>
 <br></br>
 <hr></hr>
 
