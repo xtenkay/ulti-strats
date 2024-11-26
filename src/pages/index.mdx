@@ -4,7 +4,9 @@ description: Homepage
 layout: '@/layouts/Layout.astro'
 ---
 
+import { Image } from 'astro:assets';
 import Card from '@/components/mdx/Card.astro'
+import FRU from '../../public/FRU.png'
 
 <html>
     <body>
@@ -15,5 +17,15 @@ import Card from '@/components/mdx/Card.astro'
         All the strats found here are what people currently do in Party Finder on the NA Datacenters. Unless specified otherwise (Ex: Challenge Strats) these are the same as pug strats.
         </Card>
     </div>
+    <hr></hr>
+    <Image
+        src={FRU}
+        decoding="async"
+        loading="eager"
+        alt="FRU"
+        onclick="window.open('/guides/fru','_blank')"
+        style="cursor:pointer;"
+    />
     </body>
  </html>
+
