@@ -14,11 +14,19 @@ import urDPS from '../../../public/urDPS.png'
 import urSupp from '../../../public/urSupp.png'
 import Polarizing from '../../../public/polarizing.png'
 import DarkAndLight from '../../../public/darkandlight.jpg'
+import FRUCheatSheet from '../../../public/frucs.png'
 
 <body>
-
-<Card title="WARNING">
-- All strats/clips/videos here are from current strats but they are subject to change.
+<Card title="Cheatsheet">
+<Image
+    src={FRUCheatSheet}
+    inferSize
+    decoding="async"
+    loading="eager"
+    alt="Cheatsheet"
+    onclick="window.open('/frucs.png','_blank')"
+    style="cursor:pointer;"
+    />
 </Card>
 <hr></hr>
 <Card title="Summary">
