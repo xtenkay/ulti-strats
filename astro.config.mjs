@@ -14,25 +14,23 @@ import { pluginLineNumbers } from "@expressive-code/plugin-line-numbers";
 import remarkSectionize from "./src/utils/remark/sectionize";
 
 
+import sitemap from "@astrojs/sitemap";
+
+
 const projectRootDir = path.dirname(fileURLToPath(import.meta.url));
 
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [
-    preact(),
-    tailwind(),
-    expressiveCode({
-      theme: "synthwave-84",
-      code: {
-        lineNumbers: true,
-        highlight: true,
-      },
-      plugins: [pluginLineNumbers()],
-    }),
-    mdx(),
-    pagefind(),
-  ],
+  site: 'https://ultistrats.com',
+  integrations: [preact(), tailwind(), expressiveCode({
+    theme: "synthwave-84",
+    code: {
+      lineNumbers: true,
+      highlight: true,
+    },
+    plugins: [pluginLineNumbers()],
+  }), mdx(), pagefind(), sitemap()],
   markdown: {
     remarkPlugins: [remarkSectionize],
     rehypePlugins: [
@@ -57,4 +55,3 @@ export default defineConfig({
     },
   },
 });
-
