@@ -1,6 +1,6 @@
 
 .card {
-  @apply bg-slate-900 border border-black text-white p-5 lg:p-8 w-full relative rounded-sm z-10 antialiased;
+  @apply bg-slate-800 border border-black text-white p-5 lg:p-8 w-full relative rounded-sm z-10 antialiased;
   @apply border-neutral-500;
   @apply shadow-[5px_5px_0_-1px_#131313,_5px_5px_0_#737373];
   @apply transition-all duration-150 ease-in-out;
