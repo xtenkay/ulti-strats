@@ -163,4 +163,16 @@
   .ulti-tooltip{
     margin:0 auto;
   }
+
+  .fru-button {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1090 / 319;
+    background-image: url('/FRU.png');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+  }
 }
