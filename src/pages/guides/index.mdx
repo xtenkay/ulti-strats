@@ -4,17 +4,21 @@ description: Guides
 layout: '@/layouts/Layout.astro'
 nav_order: 1
 ---
-
+import { Image } from 'astro:assets';
 import Card from '@/components/mdx/Card.astro'
+import FRU from '../../../public/FRU.png'
 
 <html>
     <body>
-    <div>
-        <Card>
-        <h5>This website was created to be an easy to access library of all the current ultimate raid strats done in the NA FFXIV Community.</h5>
-        <br></br>
-        All the strats found here are what people currently do in Party Finder on the NA Datacenters. Unless specified otherwise (Ex: Challenge Strats) these are the same as pug strats.
-        </Card>
-    </div>
+    <Image
+        src={FRU}
+        decoding="async"
+        loading="eager"
+        alt="FRU"
+        onclick="window.open('/guides/fru','_blank')"
+        style="cursor:pointer;"
+    />
     </body>
  </html>
+
+
