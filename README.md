@@ -1,6 +1,6 @@
 # Ulti Strats
 
-Project for **ultistrats.com**.
+Project for [**ultistrats.com**](https://ultistrats.com).
 
 If you have any changes you'd like to suggest, feel free to open a PR or DM me on Discord: `@tenkay`
 
