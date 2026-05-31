@@ -5,8 +5,11 @@ description: UMAD Strats
 nav_order: 1
 ---
 import { Image } from 'astro:assets';
-import Notification from '@/components/mdx/Notification.astro'
-import Card from '@/components/mdx/Card.astro'
+import Notification from '@/components/mdx/Notification.astro';
+import Card from '@/components/mdx/Card.astro';
+import kefkaArena1 from '../../../public/kefka-arena1.png';
+import kefkaArena2 from '../../../public/kefka-arena2.png';
+import kefkaArena3 from '../../../public/kefka-arena3.png';
 
 <body>
 <Image width="400" height="400" loading="eager" class="ulti-tooltip" alt="Kefka" src="/kefkapreg.png"/>
@@ -62,13 +65,46 @@ import Card from '@/components/mdx/Card.astro'
 
 <hr></hr>
 
+## Arena Images ##
+<details>
+<summary>Click to show, click on image for full size</summary>
+<Image
+  src={kefkaArena1}
+  decoding="async"
+  loading="lazy"
+  alt="Kefka Arena Image 1"
+  onclick="location.href='/kefka-arena1.png'"
+  style="cursor:pointer;"
+/>
+
+<Image
+  src={kefkaArena2}
+  decoding="async"
+  loading="lazy"
+  alt="Kefka Arena Image 2"
+  onclick="location.href='/kefka-arena2.png'"
+  style="cursor:pointer;"
+/>
+
+
+<Image
+  src={kefkaArena3}
+  decoding="async"
+  loading="lazy"
+  alt="Kefka Arena Image 3"
+  onclick="location.href='/kefka-arena3.png'"
+  style="cursor:pointer;"
+/>
+
+</details>
+
 ## Changelog
 <em>(All times in PST · Dates in DD/MM)</em><br></br>
 
 | Date | Changes |
 |------|---------|
 | 31/05 - 13:30 | Initial page created. |
-|  |   |
+| 31/05 - 14:30 | Added arena images. |
 
 
 <br></br>
