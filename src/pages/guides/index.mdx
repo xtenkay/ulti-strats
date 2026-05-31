@@ -6,18 +6,17 @@ nav_order: 1
 ---
 import { Image } from 'astro:assets';
 import Card from '@/components/mdx/Card.astro'
-import UMAD from '../../../public/kefkapreg.png'
+import UMAD from '../../../public/sigmascape.png'
 
 <html>
     <body>
     <h3>I'll update the image once the title card is in the game</h3>
-    <Image
-        src={UMAD}
-        decoding="async"
-        loading="eager"
-        alt="UMAD"
-        onclick="window.open('/guides/umad','_blank')"
-        style="cursor:pointer;"
+    <a
+      href="/guides/umad"
+      target=""
+      rel="noopener noreferrer"
+      className="umad-button"
+      aria-label="Open UMAD Guide"
     />
     </body>
  </html>
