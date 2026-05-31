@@ -24,6 +24,7 @@ const projectRootDir = path.dirname(fileURLToPath(import.meta.url));
 export default defineConfig({
   redirects: {
     '/guides/dmu': '/guides/umad',
+    '/guides/dmu/': '/guides/umad',
   },
   site: 'https://ultistrats.com',
   integrations: [preact(), tailwind(), expressiveCode({
