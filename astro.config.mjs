@@ -1,5 +1,4 @@
 import { defineConfig } from "astro/config";
-import tailwind from "@astrojs/tailwind";
 import preact from "@astrojs/preact";
 import pagefind from "astro-pagefind";
 import mdx from "@astrojs/mdx";
@@ -8,6 +7,7 @@ import path from "path";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeSlug from "rehype-slug";
 import expressiveCode from "astro-expressive-code";
+import { unified } from "@astrojs/markdown-remark";
 import { pluginLineNumbers } from "@expressive-code/plugin-line-numbers";
 
 // Remark
@@ -24,10 +24,9 @@ const projectRootDir = path.dirname(fileURLToPath(import.meta.url));
 export default defineConfig({
   redirects: {
     '/guides/dmu': '/guides/umad',
-    '/guides/dmu/': '/guides/umad',
   },
   site: 'https://ultistrats.com',
-  integrations: [preact(), tailwind(), expressiveCode({
+  integrations: [preact(), expressiveCode({
     theme: "synthwave-84",
     code: {
       lineNumbers: true,
@@ -36,16 +35,18 @@ export default defineConfig({
     plugins: [pluginLineNumbers()],
   }), mdx(), pagefind(), sitemap()],
   markdown: {
-    remarkPlugins: [remarkSectionize],
-    rehypePlugins: [
-      rehypeSlug,
-      [
-        rehypeAutolinkHeadings,
-        {
-          behavior: "append",
-        },
+    processor: unified({
+      remarkPlugins: [remarkSectionize],
+      rehypePlugins: [
+        rehypeSlug,
+        [
+          rehypeAutolinkHeadings,
+          {
+            behavior: "append",
+          },
+        ],
       ],
-    ],
+    }),
   },
   social: {
     github: 'https://github.com/xtenkay/ulti-strats',

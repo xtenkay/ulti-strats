@@ -46,12 +46,9 @@ export default function remarkSectionize(): Transformer {
                 heading.data = {};
             }
 
-            if (!heading.data.hProperties) {
-                heading.data.hProperties = {};
-            }
-
-            heading.data.hProperties = {
-                ...(heading.data.hProperties as object),
+            const data = heading.data as { hProperties?: Record<string, unknown> };
+            data.hProperties = {
+                ...(data.hProperties ?? {}),
                 id: `h-${slug}`,
             };
 
